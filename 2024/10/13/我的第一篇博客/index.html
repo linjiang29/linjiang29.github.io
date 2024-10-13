@@ -59,7 +59,7 @@
       
 
 
-<div class="overlay" style="background: #66FFFF;"></div>
+<div class="overlay" style="background: #66FFFF;background: url('/img/biubiubiu.gif') no-repeat ;"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -105,13 +105,13 @@
 					
 				
 					
-						<a class="weixin" href="/img/weixin.jpg" 
-												title="微信" target="_blank"><i class="icon-weixin"></i></a>
+						<a class="qq" href="/img/qq.jpg" 
+												title="QQ" target="_blank"><i class="icon-qq"></i></a>
 					
 				
 					
-						<a class="mail" href="mailto:1084505830@qq.com" 
-												title="邮件联系" target="_blank"><i class="icon-mail"></i></a>
+						<a class="weixin" href="/img/weixin.jpg" 
+												title="微信" target="_blank"><i class="icon-weixin"></i></a>
 					
 				
 			</div>
@@ -177,13 +177,13 @@
 						
 					
 						
-						<a class="weixin" target="_blank" 
-							href="/img/weixin.jpg" title="微信"><i class="icon-weixin"></i></a>
+						<a class="qq" target="_blank" 
+							href="/img/qq.jpg" title="QQ"><i class="icon-qq"></i></a>
 						
 					
 						
-						<a class="mail" target="_blank" 
-							href="mailto:1084505830@qq.com" title="邮件联系"><i class="icon-mail"></i></a>
+						<a class="weixin" target="_blank" 
+							href="/img/weixin.jpg" title="微信"><i class="icon-weixin"></i></a>
 						
 					
 				</div>
@@ -732,11 +732,40 @@
   </div>
 
   
+<script type="text/javascript" src="/plugins/TweenMax/TweenMax.min.js"></script>
+<script type="text/javascript" src="/plugins/TweenMax/HoverImg.js"></script>
+
+<script>
+
+
+  var hoverEffect = {
+    "subNav": ".left-col .social a"
+  }
+
+
+  for (var x in hoverEffect) {
+    // 初始化data-img属性值
+    let $em = document.querySelectorAll(hoverEffect[x]);
+    $em.forEach(($a) => {
+      //console.log($a.href);
+      if (isImageType($a.href)) {
+        $a.setAttribute("data-img", $a.href)
+      }
+    })
+    // 实现悬停元素预览图片效果
+    let $a = document.querySelectorAll(hoverEffect[x] + "[data-img]");
+    $a.forEach(($em) => {
+      new HoverImgFx1($em)
+    })
+  }
+
+</script>
+
   
 <script type="text/javascript" src="/plugins/activate-power-mode/activate-power-mode.js"></script>
 <script>
   POWERMODE.colorful = true; // make power mode colorful
-  POWERMODE.shake = false; // turn off shake
+  POWERMODE.shake = true; // turn off shake
   document.body.addEventListener('input', POWERMODE);
 </script>
 
