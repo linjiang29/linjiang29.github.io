@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>冬令营模块一 | 林姜的博客</title>
+  <title>林姜的博客</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="description" content="冬令营模块一思考问题1. 每次的 HTTP 请求都相互独立，如何做到登录之后服务器知道你是谁？(Cookie 与 Session)HTTP 的无状态性HTTP 协议是无状态的，即每次请求都是独立的，服务器不会记住之前的请求。为了在多次请求中保持用户的身份信息，通常使用 Cookie 和 Session 机制。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="冬令营模块一">
+<meta property="og:title" content="林姜的博客">
 <meta property="og:url" content="http://example.com/2025/02/04/%E5%86%AC%E4%BB%A4%E8%90%A5%E6%A8%A1%E5%9D%97%E4%B8%80/index.html">
 <meta property="og:site_name" content="林姜的博客">
 <meta property="og:description" content="冬令营模块一思考问题1. 每次的 HTTP 请求都相互独立，如何做到登录之后服务器知道你是谁？(Cookie 与 Session)HTTP 的无状态性HTTP 协议是无状态的，即每次请求都是独立的，服务器不会记住之前的请求。为了在多次请求中保持用户的身份信息，通常使用 Cookie 和 Session 机制。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-02-04T03:18:26.000Z">
-<meta property="article:modified_time" content="2025-02-04T03:18:50.854Z">
+<meta property="article:published_time" content="2025-02-04T03:18:26.587Z">
+<meta property="article:modified_time" content="2025-02-04T08:11:10.652Z">
 <meta property="article:author" content="林姜">
 <meta name="twitter:card" content="summary">
   
@@ -216,89 +216,13 @@
             <article id="post-冬令营模块一" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-  
-  
-    <h1 class="article-title" itemprop="name">
-      冬令营模块一
-    </h1>
-  
-
-
-  
-  
-        
-        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
-              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
-        </span>
-
-<a href="/2025/02/04/%E5%86%AC%E4%BB%A4%E8%90%A5%E6%A8%A1%E5%9D%97%E4%B8%80/" class="archive-article-date">
-        <time datetime="2025-02-04T03:18:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-04</time>
-</a>
-
-  
-  
-    
-<div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <!-- fonts.scss -->
-      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
-      <i class="icon-statistics"></i>
-      <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">1.2k字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="icon-book icon"></i>
-      <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">5分</span>
-    </span>
-  </span>
-</div>
-
-
-  
-  </header>
-  
   <div class="article-entry" itemprop="articleBody">
     
     <h1 id="冬令营模块一"><a href="#冬令营模块一" class="headerlink" title="冬令营模块一"></a>冬令营模块一</h1><h2 id="思考问题"><a href="#思考问题" class="headerlink" title="思考问题"></a>思考问题</h2><h3 id="1-每次的-HTTP-请求都相互独立，如何做到登录之后服务器知道你是谁？-Cookie-与-Session"><a href="#1-每次的-HTTP-请求都相互独立，如何做到登录之后服务器知道你是谁？-Cookie-与-Session" class="headerlink" title="1. 每次的 HTTP 请求都相互独立，如何做到登录之后服务器知道你是谁？(Cookie 与 Session)"></a><strong>1. 每次的 HTTP 请求都相互独立，如何做到登录之后服务器知道你是谁？(Cookie 与 Session)</strong></h3><h4 id="HTTP-的无状态性"><a href="#HTTP-的无状态性" class="headerlink" title="HTTP 的无状态性"></a><strong>HTTP 的无状态性</strong></h4><p>HTTP 协议是无状态的，即每次请求都是独立的，服务器不会记住之前的请求。为了在多次请求中保持用户的身份信息，通常使用 <strong>Cookie</strong> 和 <strong>Session</strong> 机制。</p>
 <span id="more"></span>
 
-<h4 id="Cookie-与-Session-的区别"><a href="#Cookie-与-Session-的区别" class="headerlink" title="Cookie 与 Session 的区别"></a><strong>Cookie 与 Session 的区别</strong></h4><table>
-<thead>
-<tr>
-<th></th>
-<th>Cookie</th>
-<th>Session</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>存储位置</td>
-<td>客户端浏览器</td>
-<td>服务器</td>
-</tr>
-<tr>
-<td>作用范围</td>
-<td>客户端可读写</td>
-<td>服务器端管理，客户端仅存储 Session ID</td>
-</tr>
-<tr>
-<td>安全性</td>
-<td>相对较低，容易被窃取</td>
-<td>相对较高，数据存储在服务器端</td>
-</tr>
-<tr>
-<td>适用场景</td>
-<td>适用于保存用户偏好设置、自动登录等</td>
-<td>适用于用户认证、购物车等</td>
-</tr>
-</tbody></table>
-<h4 id="Session-的实现原理"><a href="#Session-的实现原理" class="headerlink" title="Session 的实现原理"></a><strong>Session 的实现原理</strong></h4><ol>
+<p><strong>Session 的实现原理</strong></p>
+<ol>
 <li><strong>用户登录时，服务器创建 Session</strong>，并生成唯一的 <strong>Session ID</strong>。</li>
 <li><strong>服务器将 Session ID 通过 <code>Set-Cookie</code> 发送给客户端</strong>，存储在 Cookie 中（默认名 <code>PHPSESSID</code>）。</li>
 <li><strong>后续请求时，浏览器自动携带该 Session ID</strong>，服务器根据 Session ID 识别用户。</li>
@@ -409,6 +333,110 @@
 <li><strong>PHP 可以通过 Apache、Nginx 或内置服务器运行</strong>。</li>
 <li><strong>在 Linux 服务器上可以使用 <code>php</code> 命令执行 PHP 代码，并管理 MySQL 数据库</strong>。</li>
 </ul>
+<h2 id="XSS"><a href="#XSS" class="headerlink" title="XSS"></a>XSS</h2><p>关于XSS可见之前的笔记</p>
+<p><a target="_blank" rel="noopener" href="https://linjiang29.github.io/2024/10/20/XSS/">https://linjiang29.github.io/2024/10/20/XSS/</a></p>
+<h2 id="SQL注入漏洞"><a href="#SQL注入漏洞" class="headerlink" title="SQL注入漏洞"></a>SQL注入漏洞</h2><h3 id="初步了解SQL注入"><a href="#初步了解SQL注入" class="headerlink" title="初步了解SQL注入"></a>初步了解SQL注入</h3><h4 id="SQL注入漏洞的成因？"><a href="#SQL注入漏洞的成因？" class="headerlink" title="SQL注入漏洞的成因？"></a><strong>SQL注入漏洞的成因？</strong></h4><p>SQL 注入（SQL Injection）漏洞的根本原因是 <strong>Web 应用程序未对用户输入进行充分的校验和处理</strong>，导致攻击者可以通过精心构造的输入，篡改 SQL 语句，执行恶意数据库操作。</p>
+<p><strong>用户输入未经过滤或转义</strong></p>
+<ul>
+<li>直接将用户输入的字符串拼接到 SQL 语句中，导致 SQL 语句结构被篡改。</li>
+</ul>
+<p><strong>服务器权限过大</strong></p>
+<ul>
+<li>数据库账号使用 <strong>root</strong> 或者 <strong>高权限用户</strong> 运行 SQL，攻击者可能执行 <strong>DROP TABLE、DELETE、UPDATE</strong> 等操作，造成严重破坏。</li>
+</ul>
+<p><strong>错误信息暴露</strong></p>
+<ul>
+<li>如果 SQL 语法错误，服务器会返回 <strong>详细的错误信息</strong>，攻击者可以利用这些信息来推测数据库结构（如 <code>Table &#39;users&#39; doesn&#39;t exist</code> 之类的提示）。</li>
+</ul>
+<h4 id="SQL注入造成的影响"><a href="#SQL注入造成的影响" class="headerlink" title="SQL注入造成的影响?"></a><strong>SQL注入造成的影响?</strong></h4><p>SQL 注入可能会导致以下严重后果：</p>
+<table>
+<thead>
+<tr>
+<th><strong>影响类型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>💀 数据泄露</strong></td>
+<td>攻击者可以获取数据库中的敏感信息，如 <strong>用户名、密码、信用卡信息</strong></td>
+</tr>
+<tr>
+<td><strong>🛠 数据篡改</strong></td>
+<td>可以修改数据库中的信息，例如修改管理员密码</td>
+</tr>
+<tr>
+<td><strong>🚀 绕过身份验证</strong></td>
+<td>直接登录管理员账号，不需要密码</td>
+</tr>
+<tr>
+<td><strong>🔥 服务器权限提升</strong></td>
+<td>在某些情况下，可以执行 <strong>系统命令</strong>（如 <code>xp_cmdshell</code> 在 SQL Server 中）</td>
+</tr>
+<tr>
+<td><strong>💣 数据库破坏</strong></td>
+<td>使用 <code>DROP TABLE</code> <strong>删除所有数据</strong>，导致数据库崩溃</td>
+</tr>
+<tr>
+<td><strong>🦠 挂马 &amp; 植入后门</strong></td>
+<td>通过 SQL 语句执行系统命令，植入木马或后门</td>
+</tr>
+</tbody></table>
+<h4 id="SQL注入漏洞的类型？"><a href="#SQL注入漏洞的类型？" class="headerlink" title="SQL注入漏洞的类型？"></a><strong>SQL注入漏洞的类型？</strong></h4><p><strong>基本 SQL 注入</strong></p>
+<ul>
+<li><p><strong>特点</strong>：直接插入 SQL 语句，改变原有 SQL 逻辑</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27; OR &#x27;</span><span class="number">1</span><span class="string">&#x27;=&#x27;</span><span class="number">1</span><span class="string">&#x27; --</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<p><strong>报错注入（Error-based SQL Injection）</strong></p>
+<ul>
+<li><p><strong>特点</strong>：利用数据库错误信息获取数据</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27; AND (SELECT 1 FROM (SELECT COUNT(*), CONCAT((SELECT database()), 0x7e, FLOOR(RAND(0)*2)) AS x FROM information_schema.tables GROUP BY x) a) -- </span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<p><strong>盲注（Blind SQL Injection）</strong></p>
+<p><strong>（不回显数据，通过布尔值或时间判断是否正确）</strong></p>
+<ul>
+<li><p><strong>布尔型盲注</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">复制编辑</span><br><span class="line">&#x27; AND (SELECT 1 FROM users WHERE username=&#x27;admin&#x27; AND LENGTH(password) &gt; 10) -- </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>如果返回正常页面</strong>：说明管理员密码长度大于 10。</li>
+</ul>
+<p><strong>时间盲注（Time-based Blind SQL Injection）</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">复制编辑</span><br><span class="line">&#x27; OR IF(SUBSTRING((SELECT password FROM users WHERE username=&#x27;admin&#x27;), 1, 1)=&#x27;a&#x27;, SLEEP(5), 0) -- </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果服务器 <strong>延迟 5 秒</strong>，说明 **管理员密码的第一个字符是 <code>a</code>**。</li>
+</ul>
+</li>
+</ul>
+<h4 id="如何进行防范？-预处理"><a href="#如何进行防范？-预处理" class="headerlink" title="如何进行防范？(预处理)"></a><strong>如何进行防范？(预处理)</strong></h4><p><strong>最有效的方法：使用</strong> <strong><code>预处理（Prepared Statements）</code></strong> 预处理语句可以防止 SQL 语法被用户输入破坏，从而 <strong>彻底杜绝 SQL 注入</strong>。</p>
+<h5 id="其他防御措施"><a href="#其他防御措施" class="headerlink" title="其他防御措施"></a><strong>其他防御措施</strong></h5><table>
+<thead>
+<tr>
+<th><strong>防御方法</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>✅ 使用预处理</strong></td>
+<td><strong>最有效的防御方式</strong>，所有 SQL 查询都用 <strong><code>Prepared Statements</code></strong></td>
+</tr>
+<tr>
+<td><strong>✅ 输入校验</strong></td>
+<td>限制用户名、密码的输入格式（如只允许 <strong>字母+数字</strong>）</td>
+</tr>
+<tr>
+<td><strong>✅ 最小权限原则</strong></td>
+<td><strong>数据库用户权限最小化</strong>，禁止 <code>DROP</code> &#x2F; <code>UPDATE</code> 等高危操作</td>
+</tr>
+<tr>
+<td><strong>✅ 关闭详细错误信息</strong></td>
+<td><strong>避免 SQL 错误信息回显</strong>，防止泄露表名、列名</td>
+</tr>
+<tr>
+<td><strong>✅ WAF（Web 应用防火墙）</strong></td>
+<td>使用防火墙 <strong>拦截 SQL 注入</strong>，如 <strong>ModSecurity</strong></td>
+</tr>
+</tbody></table>
 
     
 
@@ -423,7 +451,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://example.com/2025/02/04/冬令营模块一/" title="冬令营模块一" target="_blank">http://example.com/2025/02/04/冬令营模块一/</a>
+          <a href="http://example.com/2025/02/04/冬令营模块一/" title="" target="_blank">http://example.com/2025/02/04/冬令营模块一/</a>
         </li>
         
         <li>
@@ -505,6 +533,15 @@
 
 <nav id="article-nav">
   
+    <a href="/2025/02/04/SQL%E6%B3%A8%E5%85%A5%E5%88%A9%E7%94%A8%E5%8F%8A%E7%BB%95%E8%BF%87%E6%80%BB%E7%BB%93/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
   
     <a href="/2025/02/04/MySQL%E5%BE%85%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">MySQL待解决的问题</div>
@@ -534,7 +571,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%AC%E4%BB%A4%E8%90%A5%E6%A8%A1%E5%9D%97%E4%B8%80"><span class="toc-number">1.</span> <span class="toc-text">冬令营模块一</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%9D%E8%80%83%E9%97%AE%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">思考问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%AF%8F%E6%AC%A1%E7%9A%84-HTTP-%E8%AF%B7%E6%B1%82%E9%83%BD%E7%9B%B8%E4%BA%92%E7%8B%AC%E7%AB%8B%EF%BC%8C%E5%A6%82%E4%BD%95%E5%81%9A%E5%88%B0%E7%99%BB%E5%BD%95%E4%B9%8B%E5%90%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9F%A5%E9%81%93%E4%BD%A0%E6%98%AF%E8%B0%81%EF%BC%9F-Cookie-%E4%B8%8E-Session"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. 每次的 HTTP 请求都相互独立，如何做到登录之后服务器知道你是谁？(Cookie 与 Session)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#HTTP-%E7%9A%84%E6%97%A0%E7%8A%B6%E6%80%81%E6%80%A7"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">HTTP 的无状态性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Cookie-%E4%B8%8E-Session-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">Cookie 与 Session 的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Session-%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="toc-number">1.1.1.3.</span> <span class="toc-text">Session 的实现原理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-PHP-%E5%A6%82%E4%BD%95%E5%BC%80%E5%90%AF-Session%EF%BC%9F%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Session%EF%BC%9F%E5%AF%B9%E5%BA%94%E7%9A%84-Cookie-%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E5%BE%81%EF%BC%9F"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. PHP 如何开启 Session？如何使用 Session？对应的 Cookie 有什么特征？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E4%B8%8E%E4%BD%BF%E7%94%A8-Session"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">开启与使用 Session</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%BB%E5%8F%96-Session"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">读取 Session</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%94%80%E6%AF%81-Session"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">销毁 Session</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Session-%E7%9B%B8%E5%85%B3%E7%9A%84-Cookie-%E7%89%B9%E5%BE%81"><span class="toc-number">1.1.2.4.</span> <span class="toc-text">Session 相关的 Cookie 特征</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-PHP-%E5%A6%82%E4%BD%95%E4%B8%8E-MySQL-%E8%BF%9E%E6%8E%A5%EF%BC%9F%E5%A6%82%E4%BD%95%E5%9C%A8-PHP-%E4%B8%AD%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%EF%BC%9F"><span class="toc-number">1.1.3.</span> <span class="toc-text">3. PHP 如何与 MySQL 连接？如何在 PHP 中查询数据库中的数据？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-MySQLi-%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%88%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%EF%BC%89"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">使用 MySQLi 连接数据库（面向过程）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">查询数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-PDO-%E8%BF%9E%E6%8E%A5-MySQL%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">使用 PDO 连接 MySQL（推荐）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-PDO-%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE"><span class="toc-number">1.1.3.4.</span> <span class="toc-text">使用 PDO 查询数据</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-PHP-%E5%8F%91%E9%80%81-SQL-%E8%AF%AD%E5%8F%A5%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C%EF%BC%9F"><span class="toc-number">1.1.4.</span> <span class="toc-text">4. PHP 发送 SQL 语句的几种方式？有什么不同？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-mysqli-prepare-%E8%BF%9B%E8%A1%8C%E9%A2%84%E5%A4%84%E7%90%86"><span class="toc-number">1.1.4.1.</span> <span class="toc-text">使用 mysqli_prepare() 进行预处理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-PDO-prepare-%E8%BF%9B%E8%A1%8C%E9%A2%84%E5%A4%84%E7%90%86"><span class="toc-number">1.1.4.2.</span> <span class="toc-text">使用 PDO::prepare() 进行预处理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%A6%82%E4%BD%95%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E8%AE%A9-PHP-%E8%B7%91%E8%B5%B7%E6%9D%A5%EF%BC%9F%E4%BB%80%E4%B9%88%E6%98%AF-Web-%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%9F%E9%BB%98%E8%AE%A4-PHP-%E6%96%87%E4%BB%B6%E5%BA%94%E8%AF%A5%E6%94%BE%E5%9C%A8%E5%93%AA%E9%87%8C%EF%BC%9F"><span class="toc-number">1.1.5.</span> <span class="toc-text">5. 如何在服务器上让 PHP 跑起来？什么是 Web 服务器？默认 PHP 文件应该放在哪里？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Web-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">1.1.5.1.</span> <span class="toc-text">Web 服务器的作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#PHP-%E8%BF%90%E8%A1%8C%E6%96%B9%E5%BC%8F"><span class="toc-number">1.1.5.2.</span> <span class="toc-text">PHP 运行方式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%B0%9D%E8%AF%95%E5%9C%A8%E5%8F%AA%E6%9C%89%E7%BA%AF%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E6%89%A7%E8%A1%8C%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4"><span class="toc-number">1.1.6.</span> <span class="toc-text">6. 尝试在只有纯命令行的服务器上执行一些命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80-Linux-%E5%91%BD%E4%BB%A4"><span class="toc-number">1.1.6.1.</span> <span class="toc-text">基础 Linux 命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C-PHP"><span class="toc-number">1.1.6.2.</span> <span class="toc-text">运行 PHP</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%A1%E7%90%86-MySQL"><span class="toc-number">1.1.6.3.</span> <span class="toc-text">管理 MySQL</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.1.7.</span> <span class="toc-text">总结</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%AC%E4%BB%A4%E8%90%A5%E6%A8%A1%E5%9D%97%E4%B8%80"><span class="toc-number">1.</span> <span class="toc-text">冬令营模块一</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%9D%E8%80%83%E9%97%AE%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">思考问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%AF%8F%E6%AC%A1%E7%9A%84-HTTP-%E8%AF%B7%E6%B1%82%E9%83%BD%E7%9B%B8%E4%BA%92%E7%8B%AC%E7%AB%8B%EF%BC%8C%E5%A6%82%E4%BD%95%E5%81%9A%E5%88%B0%E7%99%BB%E5%BD%95%E4%B9%8B%E5%90%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9F%A5%E9%81%93%E4%BD%A0%E6%98%AF%E8%B0%81%EF%BC%9F-Cookie-%E4%B8%8E-Session"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. 每次的 HTTP 请求都相互独立，如何做到登录之后服务器知道你是谁？(Cookie 与 Session)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#HTTP-%E7%9A%84%E6%97%A0%E7%8A%B6%E6%80%81%E6%80%A7"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">HTTP 的无状态性</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-PHP-%E5%A6%82%E4%BD%95%E5%BC%80%E5%90%AF-Session%EF%BC%9F%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Session%EF%BC%9F%E5%AF%B9%E5%BA%94%E7%9A%84-Cookie-%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E5%BE%81%EF%BC%9F"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. PHP 如何开启 Session？如何使用 Session？对应的 Cookie 有什么特征？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E4%B8%8E%E4%BD%BF%E7%94%A8-Session"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">开启与使用 Session</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%BB%E5%8F%96-Session"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">读取 Session</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%94%80%E6%AF%81-Session"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">销毁 Session</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Session-%E7%9B%B8%E5%85%B3%E7%9A%84-Cookie-%E7%89%B9%E5%BE%81"><span class="toc-number">1.1.2.4.</span> <span class="toc-text">Session 相关的 Cookie 特征</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-PHP-%E5%A6%82%E4%BD%95%E4%B8%8E-MySQL-%E8%BF%9E%E6%8E%A5%EF%BC%9F%E5%A6%82%E4%BD%95%E5%9C%A8-PHP-%E4%B8%AD%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%EF%BC%9F"><span class="toc-number">1.1.3.</span> <span class="toc-text">3. PHP 如何与 MySQL 连接？如何在 PHP 中查询数据库中的数据？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-MySQLi-%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%88%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%EF%BC%89"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">使用 MySQLi 连接数据库（面向过程）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">查询数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-PDO-%E8%BF%9E%E6%8E%A5-MySQL%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">使用 PDO 连接 MySQL（推荐）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-PDO-%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE"><span class="toc-number">1.1.3.4.</span> <span class="toc-text">使用 PDO 查询数据</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-PHP-%E5%8F%91%E9%80%81-SQL-%E8%AF%AD%E5%8F%A5%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C%EF%BC%9F"><span class="toc-number">1.1.4.</span> <span class="toc-text">4. PHP 发送 SQL 语句的几种方式？有什么不同？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-mysqli-prepare-%E8%BF%9B%E8%A1%8C%E9%A2%84%E5%A4%84%E7%90%86"><span class="toc-number">1.1.4.1.</span> <span class="toc-text">使用 mysqli_prepare() 进行预处理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-PDO-prepare-%E8%BF%9B%E8%A1%8C%E9%A2%84%E5%A4%84%E7%90%86"><span class="toc-number">1.1.4.2.</span> <span class="toc-text">使用 PDO::prepare() 进行预处理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%A6%82%E4%BD%95%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E8%AE%A9-PHP-%E8%B7%91%E8%B5%B7%E6%9D%A5%EF%BC%9F%E4%BB%80%E4%B9%88%E6%98%AF-Web-%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%9F%E9%BB%98%E8%AE%A4-PHP-%E6%96%87%E4%BB%B6%E5%BA%94%E8%AF%A5%E6%94%BE%E5%9C%A8%E5%93%AA%E9%87%8C%EF%BC%9F"><span class="toc-number">1.1.5.</span> <span class="toc-text">5. 如何在服务器上让 PHP 跑起来？什么是 Web 服务器？默认 PHP 文件应该放在哪里？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Web-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">1.1.5.1.</span> <span class="toc-text">Web 服务器的作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#PHP-%E8%BF%90%E8%A1%8C%E6%96%B9%E5%BC%8F"><span class="toc-number">1.1.5.2.</span> <span class="toc-text">PHP 运行方式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%B0%9D%E8%AF%95%E5%9C%A8%E5%8F%AA%E6%9C%89%E7%BA%AF%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E6%89%A7%E8%A1%8C%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4"><span class="toc-number">1.1.6.</span> <span class="toc-text">6. 尝试在只有纯命令行的服务器上执行一些命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80-Linux-%E5%91%BD%E4%BB%A4"><span class="toc-number">1.1.6.1.</span> <span class="toc-text">基础 Linux 命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C-PHP"><span class="toc-number">1.1.6.2.</span> <span class="toc-text">运行 PHP</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%A1%E7%90%86-MySQL"><span class="toc-number">1.1.6.3.</span> <span class="toc-text">管理 MySQL</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.1.7.</span> <span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#XSS"><span class="toc-number">1.2.</span> <span class="toc-text">XSS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E"><span class="toc-number">1.3.</span> <span class="toc-text">SQL注入漏洞</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E6%AD%A5%E4%BA%86%E8%A7%A3SQL%E6%B3%A8%E5%85%A5"><span class="toc-number">1.3.1.</span> <span class="toc-text">初步了解SQL注入</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#SQL%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E%E7%9A%84%E6%88%90%E5%9B%A0%EF%BC%9F"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">SQL注入漏洞的成因？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SQL%E6%B3%A8%E5%85%A5%E9%80%A0%E6%88%90%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">SQL注入造成的影响?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SQL%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E%E7%9A%84%E7%B1%BB%E5%9E%8B%EF%BC%9F"><span class="toc-number">1.3.1.3.</span> <span class="toc-text">SQL注入漏洞的类型？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E9%98%B2%E8%8C%83%EF%BC%9F-%E9%A2%84%E5%A4%84%E7%90%86"><span class="toc-number">1.3.1.4.</span> <span class="toc-text">如何进行防范？(预处理)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E9%98%B2%E5%BE%A1%E6%8E%AA%E6%96%BD"><span class="toc-number">1.3.1.4.1.</span> <span class="toc-text">其他防御措施</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
