@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | 林姜的博客</title>
+  <title>Flask | 林姜的博客</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="林姜的博客">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="Flaskflask是什么Flask 是一个用 Python 编写的轻量级 Web 应用框架。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Flask">
+<meta property="og:url" content="http://example.com/2025/03/23/Flask/index.html">
 <meta property="og:site_name" content="林姜的博客">
+<meta property="og:description" content="Flaskflask是什么Flask 是一个用 Python 编写的轻量级 Web 应用框架。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-03-23T03:04:44.000Z">
+<meta property="article:modified_time" content="2025-03-23T03:06:25.867Z">
 <meta property="article:author" content="林姜">
 <meta name="twitter:card" content="summary">
   
@@ -209,306 +213,322 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Flask" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
   
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2025" class="archive-year">2025</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+    <h1 class="article-title" itemprop="name">
+      Flask
+    </h1>
+  
+
+
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/2025/03/23/Flask/" class="archive-article-date">
         <time datetime="2025-03-23T03:04:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-03-23</time>
 </a>
 
-        </div>
-    	 
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2025/03/23/Flask/" target="_blank">Flask</a>
   
-    </h1>
-  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">2.7k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">10分</span>
+    </span>
+  </span>
+</div>
 
 
-        <div class="article-info info-on-right">
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="Flask"><a href="#Flask" class="headerlink" title="Flask"></a>Flask</h1><h2 id="flask是什么"><a href="#flask是什么" class="headerlink" title="flask是什么"></a>flask是什么</h2><p>Flask 是一个用 Python 编写的轻量级 Web 应用框架。</p>
+<span id="more"></span>
+
+<h3 id="flask特点"><a href="#flask特点" class="headerlink" title="flask特点"></a>flask特点</h3><ul>
+<li><strong>轻量级和简洁</strong>：Flask 是一个微框架，提供了最基本的功能，不强制使用任何特定的工具或库。它的核心是简单而灵活的，允许开发者根据需要添加功能。</li>
+<li><strong>灵活性</strong>：Flask 提供了基本的框架结构，但没有强制性的项目布局或组件，开发者可以根据自己的需求自定义。</li>
+<li><strong>可扩展性</strong>：Flask 的设计允许你通过插件和扩展来添加功能。许多常见的功能，如表单处理、数据库交互和用户认证，都可以通过社区提供的扩展来实现。</li>
+<li><strong>内置开发服务器</strong>：Flask 内置了一个开发服务器，方便在本地进行调试和测试。</li>
+<li><strong>RESTful 支持</strong>：Flask 支持 RESTful API 的开发，适合构建现代的 Web 服务和应用程序。</li>
+</ul>
+<h2 id="flask第一个应用"><a href="#flask第一个应用" class="headerlink" title="flask第一个应用"></a>flask第一个应用</h2><p>首先，创建一个名为 app.py 的文件，并添加以下内容：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask</span><br><span class="line"></span><br><span class="line">app = Flask(__name__)</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">hello_world</span>():</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;Hello, World!&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    app.run(debug=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+
+<p>在命令行中运行 Flask 应用：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python app.py</span><br></pre></td></tr></table></figure>
+
+<p>将会看到 Flask 开发服务器启动，并显示类似于以下内容：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"> * Running on http://127.0.0.1:5000</span><br><span class="line">Press CTRL+C to quit</span><br><span class="line"> * Restarting with stat</span><br><span class="line"> * Debugger is active!</span><br><span class="line"> * Debugger PIN: 977-918-914</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>打开浏览器，访问 <a target="_blank" rel="noopener" href="http://127.0.0.1:5000/%EF%BC%8C%E5%BA%94%E8%AF%A5%E4%BC%9A%E7%9C%8B%E5%88%B0">http://127.0.0.1:5000/，应该会看到</a> “Hello, World!” 的消息，表示 Flask 已成功安装并运行。</p>
+<h3 id="代码解析"><a href="#代码解析" class="headerlink" title="代码解析"></a>代码解析</h3><ul>
+<li><strong>from flask import Flask</strong>： 这行代码从 <code>flask</code> 模块中导入了 <code>Flask</code> 类。<code>Flask</code> 类是 Flask 框架的核心，用于创建 Flask 应用程序实例。</li>
+<li>**app &#x3D; Flask(<strong>name</strong>)**： 这行代码创建了一个 Flask 应用实例。<code>__name__</code> 是一个特殊的 Python 变量，它在模块被直接运行时是 <code>&#39;__main__&#39;</code>，在被其他模块导入时是模块的名字。传递 <code>__name__</code> 给 <code>Flask</code> 构造函数允许 Flask 应用找到和加载配置文件。</li>
+<li>**@app.route(‘&#x2F;‘)**： 这是一个装饰器，用于告诉 Flask 哪个 URL 应该触发下面的函数。在这个例子中，它指定了根 URL（即网站的主页）。</li>
+<li>**def hello_world():**： 这是定义了一个名为 <code>hello_world</code> 的函数，它将被调用当用户访问根URL时。</li>
+<li>**return ‘Hello, World!’**： 这行代码是 <code>hello_world</code> 函数的返回值。当用户访问根 URL 时，这个字符串将被发送回用户的浏览器。</li>
+<li>**if <strong>name</strong> &#x3D;&#x3D; ‘<strong>main</strong>‘:**：这行代码是一个条件判断，用于检查这个模块是否被直接运行，而不是被其他模块导入。如果是直接运行，下面的代码块将被执行。</li>
+<li>**app.run(debug&#x3D;True)**：这行代码调用 Flask 应用实例的 <code>run</code> 方法，启动 Flask 内置的开发服务器。<code>debug=True</code> 参数会启动调试模式，这意味着应用会在代码改变时自动重新加载，并且在发生错误时提供一个调试器。</li>
+</ul>
+<h2 id="Flask-基本概念"><a href="#Flask-基本概念" class="headerlink" title="Flask 基本概念"></a>Flask 基本概念</h2><p>上一个章节我们已经学会了如何创建第一个 Flask 应用，本章节我们将来详细了解 Flask 的一些基本概念。</p>
+<p>了解 Flask 的基本概念对于开发高效的 Web 应用非常重要。</p>
+<p>以下是 Flask 的主要基本概念的详细解析：</p>
+<ul>
+<li><strong>路由</strong>：路由是 URL 到 Python 函数的映射。Flask 允许你定义路由，这样当特定的 URL 被访问时，就会调用相应的函数。</li>
+<li><strong>视图函数</strong>：视图函数是处理请求并返回响应的 Python 函数。它们通常接收请求对象作为参数，并返回响应对象。</li>
+<li><strong>请求对象</strong>：请求对象包含了客户端发送的请求信息，如请求方法、URL、请求头、表单数据等。</li>
+<li><strong>响应对象</strong>：响应对象包含了发送给客户端的响应信息，如状态码、响应头、响应体等。</li>
+<li><strong>模板</strong>：Flask 使用 Jinja2 模板引擎来渲染 HTML 模板。模板允许你将 Python 代码嵌入到 HTML 中，从而动态生成网页。</li>
+<li><strong>应用工厂</strong>：应用工厂是一个 Python 函数，它创建并返回一个 Flask 应用实例。这允许你配置和初始化你的应用，并且可以创建多个应用实例。</li>
+<li><strong>配置对象</strong>：Flask 应用有一个配置对象，你可以使用它来设置各种配置选项，如数据库连接字符串、调试模式等。</li>
+<li><strong>蓝图</strong>：蓝图是 Flask 中的一个组织代码的方式，它允许你将相关的视图函数、模板和静态文件组织在一起，并且可以在多个应用中重用。</li>
+<li><strong>静态文件</strong>：静态文件是不会被服务器端执行的文件，如 CSS、JavaScript 和图片文件。Flask 提供了一个简单的方法来服务这些文件。</li>
+<li><strong>扩展</strong>：Flask 有许多扩展，可以添加额外的功能，如数据库集成、表单验证、用户认证等。</li>
+<li><strong>会话</strong>：Flask 使用客户端会话来存储用户信息，这允许你在用户浏览你的应用时记住他们的状态。</li>
+<li><strong>错误处理</strong>：Flask 允许你定义错误处理函数，当特定的错误发生时，这些函数会被调用。</li>
+</ul>
+<h3 id="1-路由-Routing"><a href="#1-路由-Routing" class="headerlink" title="1.路由 (Routing)"></a>1.路由 (Routing)</h3><p>路由是 URL 到 Python 函数的映射。Flask 允许你定义路由，使得当用户访问特定 URL 时，Flask 会调用对应的视图函数来处理请求。</p>
+<p><strong>实例</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask</span><br><span class="line"></span><br><span class="line">app = Flask(__name__)</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">home</span>():</span><br><span class="line">  <span class="keyword">return</span> <span class="string">&#x27;Welcome to the Home Page!&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/about&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">about</span>():</span><br><span class="line">  <span class="keyword">return</span> <span class="string">&#x27;This is the About Page.&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>@app.route(&#39;/&#39;)</code>：将根 URL <code>/</code> 映射到 <code>home</code> 函数。</li>
+<li><code>@app.route(&#39;/about&#39;)</code>：将 <code>/about</code> URL 映射到 <code>about</code> 函数。</li>
+</ul>
+<h3 id="2-视图函数-View-Functions"><a href="#2-视图函数-View-Functions" class="headerlink" title="2. 视图函数 (View Functions)"></a>2. 视图函数 (View Functions)</h3><p>视图函数是处理请求并返回响应的 Python 函数。它们通常接收请求对象作为参数，并返回响应对象，或者直接返回字符串、HTML 等内容。</p>
+<p><strong>实例</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> request</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/greet/&lt;name&gt;&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">greet</span>(<span class="params">name</span>):</span><br><span class="line">  <span class="keyword">return</span> <span class="string">f&#x27;Hello, <span class="subst">&#123;name&#125;</span>!&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>greet 函数接收 URL 中的 name 参数，并返回一个字符串响应。</p>
+<h3 id="3-请求对象-Request-Object"><a href="#3-请求对象-Request-Object" class="headerlink" title="3. 请求对象 (Request Object)"></a>3. 请求对象 (Request Object)</h3><p>请求对象包含了客户端发送的请求信息，包括请求方法、URL、请求头、表单数据等。Flask 提供了 request 对象来访问这些信息。</p>
+<p><strong>实例</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> request</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/submit&#x27;</span>, methods=[<span class="string">&#x27;POST&#x27;</span>]</span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">submit</span>():</span><br><span class="line">  username = request.form.get(<span class="string">&#x27;username&#x27;</span>)</span><br><span class="line">  <span class="keyword">return</span> <span class="string">f&#x27;Hello, <span class="subst">&#123;username&#125;</span>!&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>**request.form.get(‘username’)**：获取 POST 请求中表单数据的 username 字段。</p>
+<h3 id="4-响应对象-Response-Object"><a href="#4-响应对象-Response-Object" class="headerlink" title="4. 响应对象 (Response Object)"></a>4. 响应对象 (Response Object)</h3><p>响应对象包含了发送给客户端的响应信息，包括状态码、响应头和响应体。Flask 默认会将字符串、HTML 直接作为响应体。</p>
+<p><strong>实例</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> make_response</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/custom_response&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">custom_response</span>():</span><br><span class="line">  response = make_response(<span class="string">&#x27;This is a custom response!&#x27;</span>)</span><br><span class="line">  response.headers[<span class="string">&#x27;X-Custom-Header&#x27;</span>] = <span class="string">&#x27;Value&#x27;</span></span><br><span class="line">  <span class="keyword">return</span> response</span><br></pre></td></tr></table></figure>
+
+<p><strong>make_response</strong>：创建一个自定义响应对象，并设置响应头 X-Custom-Header。</p>
+<h3 id="5-模板-Templates"><a href="#5-模板-Templates" class="headerlink" title="5. 模板 (Templates)"></a>5. 模板 (Templates)</h3><p>Flask 使用 Jinja2 模板引擎来渲染 HTML 模板。模板允许你将 Python 代码嵌入到 HTML 中，从而动态生成网页内容。</p>
+<p><strong>实例</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> render_template</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/hello/&lt;name&gt;&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">hello</span>(<span class="params">name</span>):</span><br><span class="line">  <span class="keyword">return</span> render_template(<span class="string">&#x27;hello.html&#x27;</span>, name=name)</span><br></pre></td></tr></table></figure>
+
+<p>模板文件 (templates&#x2F;hello.html)：</p>
+<p><strong>实例</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Hello&lt;/**title**&gt;</span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello, &#123;&#123; name &#125;&#125;!&lt;/**h1&gt;</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="6-应用工厂-Application-Factory"><a href="#6-应用工厂-Application-Factory" class="headerlink" title="6. 应用工厂 (Application Factory)"></a>6. 应用工厂 (Application Factory)</h3><p>应用工厂是一个 Python 函数，用于创建和配置 Flask 应用实例。这种方法允许你创建多个应用实例，或者在不同配置下初始化应用。</p>
+<p><strong>实例</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">create_app</span>(<span class="params">config_name</span>):</span><br><span class="line">  app = Flask(__name__)</span><br><span class="line">  app.config.from_object(config_name)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">from</span> . <span class="keyword">import</span> routes</span><br><span class="line">  app.register_blueprint(routes.bp)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> app</span><br></pre></td></tr></table></figure>
+
+<p>create_app 函数创建一个 Flask 应用实例，并从配置对象中加载配置。</p>
+<h3 id="7-配置对象-Configuration-Objects"><a href="#7-配置对象-Configuration-Objects" class="headerlink" title="7. 配置对象 (Configuration Objects)"></a>7. 配置对象 (Configuration Objects)</h3><p>配置对象用于设置应用的各种配置选项，如数据库连接字符串、调试模式等。可以通过直接设置或加载配置文件来配置 Flask 应用。</p>
+<p><strong>实例</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Config</span>:</span><br><span class="line">  DEBUG = <span class="literal">True</span></span><br><span class="line">  SECRET_KEY = <span class="string">&#x27;mysecretkey&#x27;</span></span><br><span class="line">  SQLALCHEMY_DATABASE_URI = <span class="string">&#x27;sqlite:///mydatabase.db&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>**app.config.from_object(Config)**：将 Config 类中的配置项加载到应用配置中。</p>
+<h3 id="8-蓝图-Blueprints"><a href="#8-蓝图-Blueprints" class="headerlink" title="8. 蓝图 (Blueprints)"></a>8. 蓝图 (Blueprints)</h3><p>蓝图是 Flask 中的组织代码的方式。它允许你将相关的视图函数、模板和静态文件组织在一起，并且可以在多个应用中重用。</p>
+<p><strong>实例</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Blueprint</span><br><span class="line"></span><br><span class="line">bp = Blueprint(<span class="string">&#x27;main&#x27;</span>, __name__)</span><br><span class="line"></span><br><span class="line"><span class="meta">@bp.route(<span class="params"><span class="string">&#x27;/&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">home</span>():</span><br><span class="line">  <span class="keyword">return</span> <span class="string">&#x27;Home Page&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>注册蓝图 (app&#x2F;<strong>init</strong>.py)：</p>
+<p><strong>实例</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask</span><br><span class="line"><span class="keyword">from</span> .routes <span class="keyword">import</span> bp <span class="keyword">as</span> main_bp</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">create_app</span>():</span><br><span class="line">  app = Flask(__name__)</span><br><span class="line">  app.register_blueprint(main_bp)</span><br><span class="line">  <span class="keyword">return</span> app</span><br></pre></td></tr></table></figure>
+
+<h3 id="9-静态文件-Static-Files"><a href="#9-静态文件-Static-Files" class="headerlink" title="9. 静态文件 (Static Files)"></a>9. 静态文件 (Static Files)</h3><p>静态文件是不会被服务器端执行的文件，如 CSS、JavaScript 和图片文件。Flask 提供了一个简单的方法来服务这些文件。</p>
+<p>访问静态文件示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> <span class="built_in">type</span>=<span class="string">&quot;text/css&quot;</span> href=<span class="string">&quot;&#123;&#123; url_for(&#x27;static&#x27;, filename=&#x27;style.css&#x27;) &#125;&#125;&quot;</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>静态文件目录：</strong>将静态文件放在 static 文件夹中，Flask 会自动提供服务。</p>
+<h3 id="10-扩展-Extensions"><a href="#10-扩展-Extensions" class="headerlink" title="10. 扩展 (Extensions)"></a>10. 扩展 (Extensions)</h3><p>Flask 有许多扩展，可以添加额外的功能，如数据库集成、表单验证、用户认证等。这些扩展提供了更高级的功能和第三方集成。</p>
+<p><strong>实例</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask_sqlalchemy <span class="keyword">import</span> SQLAlchemy</span><br><span class="line"></span><br><span class="line">app.config[<span class="string">&#x27;SQLALCHEMY_DATABASE_URI&#x27;</span>] = <span class="string">&#x27;sqlite:///mydatabase.db&#x27;</span></span><br><span class="line">db = SQLAlchemy(app)</span><br></pre></td></tr></table></figure>
+
+<p><strong>SQLAlchemy</strong>：用于数据库集成的扩展。</p>
+<h3 id="11-会话-Sessions"><a href="#11-会话-Sessions" class="headerlink" title="11. 会话 (Sessions)"></a>11. 会话 (Sessions)</h3><p>Flask 使用客户端会话来存储用户信息，以便在用户浏览应用时记住他们的状态。会话数据存储在客户端的 cookie 中，并在服务器端进行签名和加密。</p>
+<p><strong>实例</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> session</span><br><span class="line"></span><br><span class="line">\<span class="comment"># 自动生成的密钥</span></span><br><span class="line">app.secret_key = <span class="string">&#x27;your_secret_key_here&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/set_session/&lt;username&gt;&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">set_session</span>(<span class="params">username</span>):</span><br><span class="line">  session[<span class="string">&#x27;username&#x27;</span>] = username</span><br><span class="line">  <span class="keyword">return</span> <span class="string">f&#x27;Session set for <span class="subst">&#123;username&#125;</span>&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/get_session&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_session</span>():</span><br><span class="line">  username = session.get(<span class="string">&#x27;username&#x27;</span>)</span><br><span class="line">  <span class="keyword">return</span> <span class="string">f&#x27;Hello, <span class="subst">&#123;username&#125;</span>!&#x27;</span> <span class="keyword">if</span> username <span class="keyword">else</span> <span class="string">&#x27;No session data&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>session 对象用于存取会话数据。</p>
+<p>你可以使用 Python 内置的 secrets 模块生成一个强随机性的密钥。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 -c <span class="string">&#x27;import secrets; print(secrets.token_hex())&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="12-错误处理-Error-Handling"><a href="#12-错误处理-Error-Handling" class="headerlink" title="12. 错误处理 (Error Handling)"></a>12. 错误处理 (Error Handling)</h3><p>Flask 允许你定义错误处理函数，当特定的错误发生时，这些函数会被调用。可以自定义错误页面或处理逻辑。</p>
+<p><strong>实例</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@app.errorhandler(<span class="params"><span class="number">404</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">page_not_found</span>(<span class="params">e</span>):</span><br><span class="line">  <span class="keyword">return</span> <span class="string">&#x27;Page not found&#x27;</span>, <span class="number">404</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.errorhandler(<span class="params"><span class="number">500</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">internal_server_error</span>(<span class="params">e</span>):</span><br><span class="line">  <span class="keyword">return</span> <span class="string">&#x27;Internal server error&#x27;</span>, <span class="number">500</span></span><br></pre></td></tr></table></figure>
+
+<p>**@app.errorhandler(404)**：定义 404 错误的处理函数，返回自定义错误页面。</p>
+
+    
+
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          林姜
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://example.com/2025/03/23/Flask/" title="Flask" target="_blank">http://example.com/2025/03/23/Flask/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
-          
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
 
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2025/03/23/Flask/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/15/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" class="archive-article-date">
-        <time datetime="2025-02-15T14:31:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-15</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2025/02/15/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">文件上传</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2025/02/15/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" target="_blank">文件上传</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Flask"><span class="toc-number">1.</span> <span class="toc-text">Flask</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#flask%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.1.</span> <span class="toc-text">flask是什么</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#flask%E7%89%B9%E7%82%B9"><span class="toc-number">1.1.1.</span> <span class="toc-text">flask特点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#flask%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%BA%94%E7%94%A8"><span class="toc-number">1.2.</span> <span class="toc-text">flask第一个应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E8%A7%A3%E6%9E%90"><span class="toc-number">1.2.1.</span> <span class="toc-text">代码解析</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Flask-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.3.</span> <span class="toc-text">Flask 基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%B7%AF%E7%94%B1-Routing"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.路由 (Routing)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%A7%86%E5%9B%BE%E5%87%BD%E6%95%B0-View-Functions"><span class="toc-number">1.3.2.</span> <span class="toc-text">2. 视图函数 (View Functions)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%AF%B7%E6%B1%82%E5%AF%B9%E8%B1%A1-Request-Object"><span class="toc-number">1.3.3.</span> <span class="toc-text">3. 请求对象 (Request Object)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%93%8D%E5%BA%94%E5%AF%B9%E8%B1%A1-Response-Object"><span class="toc-number">1.3.4.</span> <span class="toc-text">4. 响应对象 (Response Object)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%A8%A1%E6%9D%BF-Templates"><span class="toc-number">1.3.5.</span> <span class="toc-text">5. 模板 (Templates)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%BA%94%E7%94%A8%E5%B7%A5%E5%8E%82-Application-Factory"><span class="toc-number">1.3.6.</span> <span class="toc-text">6. 应用工厂 (Application Factory)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E9%85%8D%E7%BD%AE%E5%AF%B9%E8%B1%A1-Configuration-Objects"><span class="toc-number">1.3.7.</span> <span class="toc-text">7. 配置对象 (Configuration Objects)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E8%93%9D%E5%9B%BE-Blueprints"><span class="toc-number">1.3.8.</span> <span class="toc-text">8. 蓝图 (Blueprints)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6-Static-Files"><span class="toc-number">1.3.9.</span> <span class="toc-text">9. 静态文件 (Static Files)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E6%89%A9%E5%B1%95-Extensions"><span class="toc-number">1.3.10.</span> <span class="toc-text">10. 扩展 (Extensions)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-%E4%BC%9A%E8%AF%9D-Sessions"><span class="toc-number">1.3.11.</span> <span class="toc-text">11. 会话 (Sessions)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86-Error-Handling"><span class="toc-number">1.3.12.</span> <span class="toc-text">12. 错误处理 (Error Handling)</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/15/%E5%86%AC%E4%BB%A4%E8%90%A5%E6%A8%A1%E5%9D%97%E4%BA%8C%E9%A2%98%E7%9B%AE/" class="archive-article-date">
-        <time datetime="2025-02-15T14:31:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-15</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2025/02/15/%E5%86%AC%E4%BB%A4%E8%90%A5%E6%A8%A1%E5%9D%97%E4%BA%8C%E9%A2%98%E7%9B%AE/" target="_blank">冬令营模块二题目</a>
-  
-    </h1>
-  
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/15/%E5%86%AC%E4%BB%A4%E8%90%A5%E6%A8%A1%E5%9D%97%E4%BA%8C/" class="archive-article-date">
-        <time datetime="2025-02-15T14:30:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-15</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2025/02/15/%E5%86%AC%E4%BB%A4%E8%90%A5%E6%A8%A1%E5%9D%97%E4%BA%8C/" target="_blank">冬令营模块二</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/04/SQL%E6%B3%A8%E5%85%A5%E5%88%A9%E7%94%A8%E5%8F%8A%E7%BB%95%E8%BF%87%E6%80%BB%E7%BB%93/" class="archive-article-date">
-        <time datetime="2025-02-04T07:59:23.288Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-04</time>
-</a>
-
-        </div>
-    	 
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/04/%E5%86%AC%E4%BB%A4%E8%90%A5%E6%A8%A1%E5%9D%97%E4%B8%80/" class="archive-article-date">
-        <time datetime="2025-02-04T03:18:26.587Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-04</time>
-</a>
-
-        </div>
-    	 
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/04/MySQL%E5%BE%85%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98/" class="archive-article-date">
-        <time datetime="2025-02-04T03:17:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-04</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2025/02/04/MySQL%E5%BE%85%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98/" target="_blank">MySQL待解决的问题</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/04/PHP%E8%A1%A8%E5%8D%95/" class="archive-article-date">
-        <time datetime="2025-02-04T03:00:46.504Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-04</time>
-</a>
 
-        </div>
-    	 
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/04/PHP/" class="archive-article-date">
-        <time datetime="2025-02-04T03:00:41.435Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-04</time>
-</a>
 
-        </div>
-    	 
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2025/02/04/MySQL/" class="archive-article-date">
-        <time datetime="2025-02-04T03:00:23.748Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-04</time>
-</a>
-
-        </div>
-    	 
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -549,8 +569,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
